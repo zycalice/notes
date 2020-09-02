@@ -1,6 +1,8 @@
 ## Welcome to Yuchen (Alice) Zhang's Website
 
-<img src="images/profile-pic.jpg" alt="hi" class="inline"/>
+<p align="center">
+  <img src="../images/profile-pic.jpg" align="center" class="inline" width="300px" height="300px"/>
+</p>
 
 I am a data scientist/data analyst interested in applying Natural Language Processing/Machine Learning to challenge current limitations in tech, law, privacy, criminal justice and media/entertainment with a deep understanding of algorithm fairness.
 
