@@ -8,5 +8,6 @@ I am a data scientist/data analyst interested in applying Natural Language Proce
 
 I care deeply about data science for social good and believe that our research in technology and algorithms should benefit the public in a fair way. Therefore, I am particularly passionate in law and media domains. Check out my projects below!
 
-- [Analysis on CFPB Complaints](https://zycalice.github.io/cfpb-complaints/)
 - [Securities Class Action Project using ML and NLP](https://zycalice.github.io/securities-class-action/)
+- [Analysis on CFPB Complaints](https://zycalice.github.io/cfpb-complaints/)
+
