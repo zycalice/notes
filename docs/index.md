@@ -1,5 +1,5 @@
 ## Welcome to Yuchen (Alice) Zhang's Website
-| <a href="https://zycalice.github.io/Resources.md/">Resume</a> | <a href="https://zycalice.github.io/Resources.md/">Resources</a> |
+ <a href="https://drive.google.com/file/d/1T6NmDaqRm1NGXt8cJb4OD2gLqeqvT27v/view?usp=sharing">Resume</a> | <a href="https://zycalice.github.io/Resources.md/">Resources</a> 
 
 <p align="center">
   <img src="./images/profile-pic.jpg" class="inline" width="500"/>
