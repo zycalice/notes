@@ -1,4 +1,5 @@
 ## Welcome to Yuchen (Alice) Zhang's Website
+| <a href="https://zycalice.github.io/Resources.md/">Resume</a> | <a href="https://zycalice.github.io/Resources.md/">Resources</a> |
 
 <p align="center">
   <img src="./images/profile-pic.jpg" class="inline" width="500"/>
