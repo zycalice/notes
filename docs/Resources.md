@@ -14,7 +14,9 @@
 # Deep Learning
 - Bandit algorithm: https://tor-lattimore.com/downloads/book/book.pdf
 - Visual Question Answering: https://visualqa.org/
-- Berkeley Course: https://courses.d2l.ai/berkeley-stat-157/index.html
+- Berkeley STAT Course: https://courses.d2l.ai/berkeley-stat-157/index.html
+- Berkeley CS Course: https://bcourses.berkeley.edu/courses/1487769; https://www2.eecs.berkeley.edu/Courses/CS282A/
+- Berkeley CS Course: https://sites.google.com/view/berkeley-cs294-158-sp20/home
 
 # Evaluation
 - Precision and recall: https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall
