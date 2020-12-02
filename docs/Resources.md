@@ -17,6 +17,9 @@
 - Berkeley STAT Course: https://courses.d2l.ai/berkeley-stat-157/index.html
 - Berkeley CS Course: https://bcourses.berkeley.edu/courses/1487769; https://www2.eecs.berkeley.edu/Courses/CS282A/
 - Berkeley CS Course: https://sites.google.com/view/berkeley-cs294-158-sp20/home
+- UPenn ESE Course: https://pratikac.github.io/pub/19_ese546.pdf?fbclid=IwAR1Z-QyDU8VZqY9c0yUha1LoaaPuwqVXfzqTbPd7RpfP-MR-e774Nke3M1k
+- UPenn CIS Course: https://www.seas.upenn.edu/~cis522/schedule.html
+- Harvard Advanced Data Science Course: https://harvard-iacs.github.io/2020F-AC295/pages/materials.html
 
 # Evaluation
 - Precision and recall: https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall
