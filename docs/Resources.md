@@ -19,3 +19,5 @@
 - Precision and recall: https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html
 - Precision, recall, sensitivity and specificity: https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall
 - Precision, recall, sensitivity and specificity: http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf
+- ROC: https://developers.google.com/machine-learning/crash-course/classification/roc-and auc#:~:text=An%20ROC%20curve%20(receiver%20operating,False%20Positive%20Rate
+
