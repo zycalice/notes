@@ -13,3 +13,9 @@
 
 # Deep Learning
 - Bandit algorithm: https://tor-lattimore.com/downloads/book/book.pdf
+
+# Evaluation
+- Precision and recall: https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall
+- Precision and recall: https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html
+- Precision, recall, sensitivity and specificity: https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall
+- Precision, recall, sensitivity and specificity: http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf
