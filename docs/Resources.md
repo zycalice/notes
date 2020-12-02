@@ -13,6 +13,7 @@
 
 # Deep Learning
 - Bandit algorithm: https://tor-lattimore.com/downloads/book/book.pdf
+- Visual Question Answering: https://visualqa.org/
 - Berkeley Course: https://courses.d2l.ai/berkeley-stat-157/index.html
 
 # Evaluation
