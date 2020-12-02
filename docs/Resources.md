@@ -13,6 +13,7 @@
 
 # Deep Learning
 - Bandit algorithm: https://tor-lattimore.com/downloads/book/book.pdf
+- Berkeley Course: https://courses.d2l.ai/berkeley-stat-157/index.html
 
 # Evaluation
 - Precision and recall: https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall
