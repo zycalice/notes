@@ -33,3 +33,7 @@
 
 # PAC Learning
 - CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
+
+# Git
+- GitPages: https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
+- GitPages config: https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml
