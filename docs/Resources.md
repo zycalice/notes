@@ -21,6 +21,9 @@
 - UPenn CIS Course: https://www.seas.upenn.edu/~cis522/schedule.html
 - Harvard Advanced Data Science Course: https://harvard-iacs.github.io/2020F-AC295/pages/materials.html
 
+# Reinforcement Learning
+- CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture26-ri.pdf
+
 # Evaluation
 - Precision and recall: https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall
 - Precision and recall: https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html
