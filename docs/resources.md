@@ -22,6 +22,7 @@
 - Harvard Advanced Data Science Course: https://harvard-iacs.github.io/2020F-AC295/pages/materials.html
 
 # Reinforcement Learning
+- Sutton Book: http://incompleteideas.net/book/RLbook2020.pdf
 - CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture26-ri.pdf
 
 # Evaluation
