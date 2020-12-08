@@ -41,7 +41,7 @@
 
 # Pytorch
 - Pytorch Intro Examples: https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
-- Pytorch Get Activation: 
+- Pytorch Access Weights: https://discuss.pytorch.org/t/access-weights-of-a-specific-module-in-nn-sequential/3627
 
 # Model Explanations:
 - LIME: https://homes.cs.washington.edu/~marcotcr/blog/lime/
