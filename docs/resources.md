@@ -38,3 +38,11 @@
 # Git
 - GitPages: https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
 - GitPages config: https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml
+
+# Pytorch
+- Pytorch Intro Examples: https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
+- Pytorch Get Activation: 
+
+# Model Explanations:
+- LIME: https://homes.cs.washington.edu/~marcotcr/blog/lime/
+
