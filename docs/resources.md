@@ -44,6 +44,7 @@
 # Pytorch
 - Pytorch Intro Examples: https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
 - Pytorch Access Weights: https://discuss.pytorch.org/t/access-weights-of-a-specific-module-in-nn-sequential/3627
+- Pytorch Latent Space: https://discuss.pytorch.org/t/plotting-the-latent-space/88431
 
 # Model Explanations:
 - LIME: https://homes.cs.washington.edu/~marcotcr/blog/lime/
