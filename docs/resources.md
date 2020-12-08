@@ -1,3 +1,6 @@
+# Support Vector Machine
+- Toronto: http://www.cs.toronto.edu/~mbrubake/teaching/C11/Handouts/SupportVectorMachines.pdf
+
 # PAC Learning
 - CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
 
