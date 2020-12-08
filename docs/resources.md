@@ -1,3 +1,6 @@
+# PAC Learning
+- CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
+
 # Principal Component Analysis
 - SVD: http://web.mit.edu/course/other/be.400/OldFiles/www/SVD/Singular_Value_Decomposition.htm
 - PCA derivation: https://www.eecs189.org/static/notes/n10.pdf
@@ -34,8 +37,11 @@
 - Precision, recall, sensitivity and specificity: http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf
 - ROC: https://developers.google.com/machine-learning/crash-course/classification/roc-and auc#:~:text=An%20ROC%20curve%20(receiver%20operating,False%20Positive%20Rate
 
-# PAC Learning
-- CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
+# Model Explanations:
+- LIME: https://homes.cs.washington.edu/~marcotcr/blog/lime/
+- LIME Paper: https://arxiv.org/pdf/1602.04938v1.pdf
+- LIME GitHub: https://github.com/marcotcr/lime
+- LIME Tutorial: https://marcotcr.github.io/lime/tutorials/Lime%20-%20basic%20usage%2C%20two%20class%20case.html
 
 # Git
 - GitPages: https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
@@ -45,11 +51,5 @@
 - Pytorch Intro Examples: https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
 - Pytorch Access Weights: https://discuss.pytorch.org/t/access-weights-of-a-specific-module-in-nn-sequential/3627
 - Pytorch Latent Space: https://discuss.pytorch.org/t/plotting-the-latent-space/88431
-
-# Model Explanations:
-- LIME: https://homes.cs.washington.edu/~marcotcr/blog/lime/
-- LIME Paper: https://arxiv.org/pdf/1602.04938v1.pdf
-- LIME GitHub: https://github.com/marcotcr/lime
-- LIME Tutorial: https://marcotcr.github.io/lime/tutorials/Lime%20-%20basic%20usage%2C%20two%20class%20case.html
 
 
