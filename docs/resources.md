@@ -10,6 +10,7 @@
 # NLP
 - NLP and argument: https://www.aclweb.org/anthology/P16-5002/
 - NLP and persuasion: https://nlds.soe.ucsc.edu/persuasion_persona
+- Seq to Seq and Attention for NLP: https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
 
 # Deep Learning
 - Bandit algorithm: https://tor-lattimore.com/downloads/book/book.pdf
