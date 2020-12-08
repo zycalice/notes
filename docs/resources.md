@@ -48,4 +48,8 @@
 
 # Model Explanations:
 - LIME: https://homes.cs.washington.edu/~marcotcr/blog/lime/
+- LIME Paper: https://arxiv.org/pdf/1602.04938v1.pdf
+- LIME GitHub: https://github.com/marcotcr/lime
+- LIME Tutorial: https://marcotcr.github.io/lime/tutorials/Lime%20-%20basic%20usage%2C%20two%20class%20case.html
+
 
