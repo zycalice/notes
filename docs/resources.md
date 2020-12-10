@@ -55,4 +55,7 @@
 - Pytorch Access Weights: https://discuss.pytorch.org/t/access-weights-of-a-specific-module-in-nn-sequential/3627
 - Pytorch Latent Space: https://discuss.pytorch.org/t/plotting-the-latent-space/88431
 
+# Datasets
+- Lionbridge: https://lionbridge.ai/datasets/
+
 
