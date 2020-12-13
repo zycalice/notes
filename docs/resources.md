@@ -50,6 +50,9 @@
 - LIME GitHub: https://github.com/marcotcr/lime
 - LIME Tutorial: https://marcotcr.github.io/lime/tutorials/Lime%20-%20basic%20usage%2C%20two%20class%20case.html
 
+# Interpretable ML
+- https://christophm.github.io/interpretable-ml-book/limo.html
+
 # Git
 - GitPages: https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
 - GitPages config: https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml
