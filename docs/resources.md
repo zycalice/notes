@@ -7,6 +7,9 @@
 # PAC Learning
 - CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
 
+# Online Learning
+- https://www.mit.edu/~9.520/spring11/slides/class15_online.pdf
+
 # Principal Component Analysis
 - SVD: http://web.mit.edu/course/other/be.400/OldFiles/www/SVD/Singular_Value_Decomposition.htm
 - PCA derivation: https://www.eecs189.org/static/notes/n10.pdf
