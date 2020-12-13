@@ -32,6 +32,7 @@
 # Reinforcement Learning
 - Sutton Book: http://incompleteideas.net/book/RLbook2020.pdf
 - CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture26-ri.pdf
+- Blog, Nice Overview: https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html
 
 # Evaluation
 - Precision and recall: https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall
