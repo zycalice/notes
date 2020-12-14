@@ -15,6 +15,7 @@
 - https://www.mit.edu/~9.520/spring11/slides/class15_online.pdf
 
 # Principal Component Analysis
+- Covariance Matrix Definition: https://www.itl.nist.gov/div898/handbook/pmc/section5/pmc541.htm
 - SVD: http://web.mit.edu/course/other/be.400/OldFiles/www/SVD/Singular_Value_Decomposition.htm
 - PCA derivation: https://www.eecs189.org/static/notes/n10.pdf
 
