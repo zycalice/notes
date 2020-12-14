@@ -5,6 +5,7 @@
 - UBC: https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf
 
 # Support Vector Machine
+- Berkeley: https://www.eecs189.org/static/notes/n20.pdf
 - Toronto: http://www.cs.toronto.edu/~mbrubake/teaching/C11/Handouts/SupportVectorMachines.pdf
 - Cornell: https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote09.html
 
