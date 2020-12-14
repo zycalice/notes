@@ -6,6 +6,7 @@
 
 # Support Vector Machine
 - Toronto: http://www.cs.toronto.edu/~mbrubake/teaching/C11/Handouts/SupportVectorMachines.pdf
+- Cornell: https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote09.html
 
 # PAC Learning
 - CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
