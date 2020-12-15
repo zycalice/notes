@@ -16,6 +16,7 @@
 
 # Online Learning
 - https://www.mit.edu/~9.520/spring11/slides/class15_online.pdf
+- http://www.ciml.info/dl/v0_8/ciml-v0_8-ch03.pdf
 
 # Principal Component Analysis
 - Covariance Matrix Definition: https://www.itl.nist.gov/div898/handbook/pmc/section5/pmc541.htm
