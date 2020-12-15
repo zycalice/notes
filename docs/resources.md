@@ -1,10 +1,14 @@
 # Type of Learning Models
 - Washington: https://sites.stat.washington.edu/mmp/courses/stat535/fall18/Handouts/l2slides-prediction-concepts.pdf
-# Linear Regression and Related
+
+# Linear Regression
 - Pearson and Spearman Correlation Comparison: https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/
 
 # Gradient Descent
 - UBC: https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf
+
+# Kernel
+- Berkeley: https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c02_p25-46.pdf
 
 # Support Vector Machine
 - Berkeley: https://www.eecs189.org/static/notes/n20.pdf
