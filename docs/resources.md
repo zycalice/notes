@@ -42,6 +42,7 @@
 - NLP and persuasion: https://nlds.soe.ucsc.edu/persuasion_persona
 - Seq to Seq and Attention for NLP: https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
 - Encoder Decoder with Attention: https://bastings.github.io/annotated_encoder_decoder/
+- Latent Dirtchlet Allocation/Topic Modeling: https://www.cl.cam.ac.uk/teaching/1213/L101/clark_lectures/lect7.pdf
 
 # Deep Learning
 - Bandit algorithm: https://tor-lattimore.com/downloads/book/book.pdf
