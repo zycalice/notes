@@ -1,3 +1,7 @@
+
+# PAC Learning
+- CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
+
 # Type of Learning Models
 - Washington: https://sites.stat.washington.edu/mmp/courses/stat535/fall18/Handouts/l2slides-prediction-concepts.pdf
 
@@ -10,18 +14,17 @@
 # Kernel
 - Berkeley: https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c02_p25-46.pdf
 
+# Online Learning
+- https://www.mit.edu/~9.520/spring11/slides/class15_online.pdf
+- http://www.ciml.info/dl/v0_8/ciml-v0_8-ch03.pdf
+
 # Support Vector Machine
+- https://www.robots.ox.ac.uk/~az/lectures/ml/lect2.pdf
 - Berkeley: https://www.eecs189.org/static/notes/n20.pdf
 - CMU: http://www.cs.cmu.edu/~aarti/Class/10701_Spring14/slides/SupportVectorMachines.pdf
 - Toronto: http://www.cs.toronto.edu/~mbrubake/teaching/C11/Handouts/SupportVectorMachines.pdf
 - Cornell: https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote09.html
 
-# PAC Learning
-- CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
-
-# Online Learning
-- https://www.mit.edu/~9.520/spring11/slides/class15_online.pdf
-- http://www.ciml.info/dl/v0_8/ciml-v0_8-ch03.pdf
 
 # Principal Component Analysis
 - Covariance Matrix Definition: https://www.itl.nist.gov/div898/handbook/pmc/section5/pmc541.htm
