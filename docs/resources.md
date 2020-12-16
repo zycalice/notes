@@ -41,6 +41,9 @@
 - SVD: http://web.mit.edu/course/other/be.400/OldFiles/www/SVD/Singular_Value_Decomposition.htm
 - PCA derivation: https://www.eecs189.org/static/notes/n10.pdf
 
+# Autoencoders
+- https://www.deeplearningbook.org/contents/autoencoders.html
+
 # Cross Validation
 - Error and validation: http://www.stat.cmu.edu/~ryantibs/advmethods/notes/errval.pdf
 - K-Fold cross validation: http://statweb.stanford.edu/~tibs/sta306bfiles/cvwrong.pdf
