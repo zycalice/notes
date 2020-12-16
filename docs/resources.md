@@ -35,7 +35,6 @@
 - Toronto: http://www.cs.toronto.edu/~mbrubake/teaching/C11/Handouts/SupportVectorMachines.pdf
 - Cornell: https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote09.html
 
-
 # Principal Component Analysis
 - Covariance Matrix Definition: https://www.itl.nist.gov/div898/handbook/pmc/section5/pmc541.htm
 - SVD: http://web.mit.edu/course/other/be.400/OldFiles/www/SVD/Singular_Value_Decomposition.htm
@@ -43,6 +42,7 @@
 
 # Autoencoders
 - https://www.deeplearningbook.org/contents/autoencoders.html
+- VAE: https://arxiv.org/pdf/1606.05908.pdf
 
 # Cross Validation
 - Error and validation: http://www.stat.cmu.edu/~ryantibs/advmethods/notes/errval.pdf
