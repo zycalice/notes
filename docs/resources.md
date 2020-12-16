@@ -5,8 +5,9 @@
 # Type of Learning Models
 - Washington: https://sites.stat.washington.edu/mmp/courses/stat535/fall18/Handouts/l2slides-prediction-concepts.pdf
 
-# Naive Bayes
-- CMU: http://www.cs.cmu.edu/~10601b/slides/NBayes.pdf
+# Bayes Net
+- Bayes Belief Nets: https://plato.stanford.edu/entries/artificial-intelligence/bayesian-nets.html
+- Naive Bayes CMU: http://www.cs.cmu.edu/~10601b/slides/NBayes.pdf
 
 # Linear Regression
 - Pearson and Spearman Correlation Comparison: https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/
