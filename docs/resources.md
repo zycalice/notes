@@ -12,6 +12,9 @@
 # Hidden Markov Model
 - CMU: http://www.cs.cmu.edu/~tbergkir/11711fa17/recitation4_notes.pdf
 
+# Recurrent Neural Network
+- Stanford: https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks
+
 # Linear Regression
 - Pearson and Spearman Correlation Comparison: https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/
 
