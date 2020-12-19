@@ -1,7 +1,7 @@
 
 # PAC Learning and VC dimention
 - CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
-- CMU: https://www.cs.princeton.edu/courses/archive/spring15/cos511/notes/lec3.pdf
+- Princeton: https://www.cs.princeton.edu/courses/archive/spring15/cos511/notes/lec3.pdf
 
 # Type of Learning Models
 - Washington: https://sites.stat.washington.edu/mmp/courses/stat535/fall18/Handouts/l2slides-prediction-concepts.pdf
