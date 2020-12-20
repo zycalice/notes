@@ -102,4 +102,6 @@
 # Datasets
 - Lionbridge: https://lionbridge.ai/datasets/
 
+# Other Blog posts
+- Autoencoder: https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798#28b1
 
