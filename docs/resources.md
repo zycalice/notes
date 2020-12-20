@@ -44,6 +44,7 @@
 # Autoencoders
 - https://www.deeplearningbook.org/contents/autoencoders.html
 - VAE: https://arxiv.org/pdf/1606.05908.pdf
+- Autoencoder using label information: https://jmlr.csail.mit.edu/papers/volume13/snoek12a/snoek12a.pdf
 
 # Cross Validation
 - Error and validation: http://www.stat.cmu.edu/~ryantibs/advmethods/notes/errval.pdf
