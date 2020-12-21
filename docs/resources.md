@@ -21,6 +21,7 @@
 
 # Gradient Descent
 - UBC: https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf
+- Berkeley: https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c03_p47-84.pdf
 
 # Kernel
 - Berkeley: https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c02_p25-46.pdf
