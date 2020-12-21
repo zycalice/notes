@@ -80,6 +80,7 @@
 - Precision, recall, sensitivity and specificity: https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall
 - Precision, recall, sensitivity and specificity: http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf
 - ROC: https://developers.google.com/machine-learning/crash-course/classification/roc-and auc#:~:text=An%20ROC%20curve%20(receiver%20operating,False%20Positive%20Rate
+- Harvard: https://scholar.harvard.edu/files/msseo/files/5.convergence_informatics_week5.pdf
 
 # Model Explanations:
 - LIME: https://homes.cs.washington.edu/~marcotcr/blog/lime/
