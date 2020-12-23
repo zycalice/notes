@@ -2,8 +2,8 @@ theme: jekyll-theme-minimal
 
 lsi: false
 safe: true
-source: https://github.com/zycalice/zycalice.github.io
-url: https://zycalice.github.io/
+# source: https://github.com/zycalice/zycalice.github.io
+# url: https://zycalice.github.io/
 incremental: false
 highlighter: rouge
 gist:
