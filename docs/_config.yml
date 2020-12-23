@@ -14,5 +14,6 @@ kramdown:
   
 includes:
   - .htaccess
+  - .md
   - _pages
   - files
