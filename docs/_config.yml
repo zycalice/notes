@@ -32,3 +32,24 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+
+# Collections
+collections:
+  resources:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: resources
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+ 
