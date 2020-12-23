@@ -13,10 +13,6 @@ kramdown:
   syntax_highlighter: rouge
   
 includes:
-  - .htaccess
-  - .md
-  - _pages
-  - files
 
 # Plugins
 plugins:
