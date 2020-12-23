@@ -1,4 +1,6 @@
-
+---
+title: Title
+---
 
 
 # Stats
