@@ -1,7 +1,12 @@
 
+# Stats
+- CLT: https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html
+- CLT: https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf
+
 # PAC Learning and VC dimention
 - CMU: https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf
 - Princeton: https://www.cs.princeton.edu/courses/archive/spring15/cos511/notes/lec3.pdf
+- Washington: https://courses.cs.washington.edu/courses/cse546/12wi/slides/cse546wi12LearningTheory.pdf
 
 # Type of Learning Models
 - Washington: https://sites.stat.washington.edu/mmp/courses/stat535/fall18/Handouts/l2slides-prediction-concepts.pdf
