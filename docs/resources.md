@@ -1,3 +1,7 @@
+---
+title: Title
+---
+
 
 # Stats
 - CLT: https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html
