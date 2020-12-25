@@ -106,6 +106,7 @@ title: Resources
 - GitPages: https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages
 - GitPages config: https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml
 - Jekyllrb: https://jekyllrb.com/docs/github-pages/
+- Jekyll: https://devhints.io/jekyll
 - Front Matter: https://jekyllrb.com/docs/front-matter/
 - JSON resume: https://jsonresume.org/getting-started/
 
