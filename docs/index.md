@@ -1,5 +1,5 @@
 ---
-title: resource, resume
+title: main
 ---
 
 ## Welcome to Yuchen (Alice) Zhang's Website
