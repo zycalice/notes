@@ -101,12 +101,13 @@ title: Resources
 # Interpretable ML
 - https://christophm.github.io/interpretable-ml-book/limo.html
 
-# Git
+# Tools
 - GitPages: https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
 - GitPages: https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages
 - GitPages config: https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml
 - Jekyllrb: https://jekyllrb.com/docs/github-pages/
 - Front Matter: https://jekyllrb.com/docs/front-matter/
+- JSON resume: https://jsonresume.org/getting-started/
 
 # Pytorch
 - Pytorch Intro Examples: https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
