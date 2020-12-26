@@ -3,7 +3,7 @@ title: main
 ---
 
 ## Welcome to Yuchen (Alice) Zhang's Website
- <a href="https://drive.google.com/file/d/1T6NmDaqRm1NGXt8cJb4OD2gLqeqvT27v/view?usp=sharing">Resume</a> | <a href= "https://zycalice.github.io/resources">Resources</a>
+ <a href="https://zycalice.github.io/experience">Experience</a> | <a href= "https://zycalice.github.io/resources">Resources</a>
 
 
 <p align="center">
