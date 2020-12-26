@@ -1,6 +1,10 @@
 ---
+<<<<<<< HEAD
 title: resources
 permalink: https://zycalice.github.io/resources
+=======
+title: Resources
+>>>>>>> parent of 52d2768... Update resources.md
 ---
 
 
