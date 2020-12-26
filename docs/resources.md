@@ -1,6 +1,6 @@
 ---
 title: resources
-permalink: https://zycalice.github.io/resources
+permalink: /resources/
 ---
 
 
