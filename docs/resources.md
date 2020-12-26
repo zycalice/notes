@@ -1,6 +1,7 @@
 ---
+layout: page
 title: Resources
-permalink: /https://zycalice.github.io/resources/
+permalink: https://zycalice.github.io/resources
 ---
 
 
