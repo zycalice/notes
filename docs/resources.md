@@ -109,6 +109,7 @@ title: Resources
 - Jekyll: https://devhints.io/jekyll
 - Front Matter: https://jekyllrb.com/docs/front-matter/
 - JSON resume: https://jsonresume.org/getting-started/
+- https://github.github.com/gfm/
 
 # Pytorch
 - Pytorch Intro Examples: https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
