@@ -7,7 +7,7 @@ title: main
 
 
 <p align="center">
-  <img src="./images/profile-pic.jpg" class="inline" width="500"/>
+  <img src="./images/profile-pic.jpg" class="inline" width="300"/>
 </p>
 
 I am a data scientist/data analyst interested in applying Natural Language Processing/Machine Learning to challenge current limitations in Tech, Law, Criminal Justice, and Media/Entertainment with a deep understanding of algorithm fairness.
