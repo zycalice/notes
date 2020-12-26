@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: resources
 permalink: https://zycalice.github.io/resources
 ---
 
