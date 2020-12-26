@@ -1,10 +1,10 @@
 ---
-layout: page
 title: Resources
+permalink: https://zycalice.github.io/resources
 ---
 
 
-# Stats
+# Statistics
 - CLT: https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html
 - CLT: https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf
 
