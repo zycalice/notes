@@ -4,6 +4,8 @@ permalink: /resources/
 ---
 
 # Resources
+[<< Back to my website](https://zycalice.github.io/)
+
 ## Statistics
 - CTT: [https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html](https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html)
 - CLT: [https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf](https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf)
