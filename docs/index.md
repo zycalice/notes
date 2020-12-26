@@ -15,6 +15,6 @@ I am a data scientist/data analyst interested in applying Natural Language Proce
 I care deeply about data science for social good and believe that our research in technology and algorithms should benefit the public in a fair way. Therefore, I am particularly passionate about ML/NLP applications in Tech, Law, Media/Entertainment. Check out my projects below!
 
 - [Securities Class Action Project using ML and NLP](https://zycalice.github.io/securities-class-action/)
-- [Fake News Detection](https://github.com/zycalice/fake-news-detection/blob/main/CIS520_Project_Report.pdf)
+- [Fake News Detection](https://github.com/zycalice/fake-news-detection/blob/main/writeups/CIS520_Proposal.pdf)
 - [Analysis on CFPB Complaints](https://zycalice.github.io/cfpb-complaints/)
 
