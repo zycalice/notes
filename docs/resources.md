@@ -3,9 +3,8 @@ title: Resources
 permalink: https://zycalice.github.io/resources
 ---
 
-
 # Stats
-- CLT: https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html
+- CLT: (https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html)
 - CLT: https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf
 
 # PAC Learning and VC dimention
