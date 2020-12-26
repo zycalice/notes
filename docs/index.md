@@ -2,7 +2,7 @@
 title: main
 ---
 
-## Welcome to Yuchen (Alice) Zhang's Website
+# Welcome to Yuchen (Alice) Zhang's Website
  <a href="https://zycalice.github.io/experience">Experience</a> | <a href= "https://zycalice.github.io/resources">Resources</a>
 
 
