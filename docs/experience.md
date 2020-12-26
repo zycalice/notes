@@ -3,8 +3,10 @@ title: experience
 permalink: /experience/
 ---
 
+# Experience
 
-# Education
+
+## Education
 ### University of Pennsylvania 
 Philadelphia, PA\
 August 2020
@@ -23,7 +25,8 @@ Edinburgh, UK\
 September 2015 – December 2015
 * Courses: Risk Management, Quality Management, Management of Technology 
 
-# Professional Experience
+
+## Professional Experience
 ### Advanced Continuing Education Association, Data Science Intern 
 Boston, MA/Remote\
 June 2020 – August 2020
@@ -50,7 +53,8 @@ June 2016 – August 2016
 * Tested and evaluated control effectiveness for 4 operations audits and 18 SOX annual audits
 * Created an automated process flow using Alteryx to detect reimbursement fraud for Internal Audit data analytics team
 
-# Volunteering
+
+## Volunteering
 ### Statistics Without Borders, Delivery Quality Assurance
 Remote\
 October 2019 – Present
