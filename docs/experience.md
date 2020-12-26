@@ -9,6 +9,7 @@ permalink: /experience/
 
 
 ## Education
+* * *
 ### University of Pennsylvania 
 Philadelphia, PA\
 August 2020
@@ -29,6 +30,7 @@ September 2015 – December 2015
 
 
 ## Professional Experience
+* * *
 ### Advanced Continuing Education Association, Data Science Intern 
 Boston, MA/Remote\
 June 2020 – August 2020
@@ -57,6 +59,7 @@ June 2016 – August 2016
 
 
 ## Volunteering
+* * *
 ### Statistics Without Borders, Delivery Quality Assurance
 Remote\
 October 2019 – Present
