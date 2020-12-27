@@ -6,6 +6,9 @@ permalink: /resources/
 # Resources
 [<< Back to my website](https://zycalice.github.io/)
 
+## Efficient Algorithm
+- Stanford, NP-Completeness: [http://web.stanford.edu/class/archive/cs/cs103/cs103.1152/lectures/27/Small27.pdf](http://web.stanford.edu/class/archive/cs/cs103/cs103.1152/lectures/27/Small27.pdf)
+
 ## Statistics
 - CTT: [https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html](https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html)
 - CLT: [https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf](https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf)
@@ -92,7 +95,6 @@ permalink: /resources/
 - Precision and recall: [https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html](https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
 - Precision, recall, sensitivity and specificity: [https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall](https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall)
 - Precision, recall, sensitivity and specificity: [http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf](http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf)
-- ROC: [https://developers.google.com/machine-learning/crash-course/classification/roc-and auc#:~:text=An%20ROC%20curve%20(receiver%20operating,False%20Positive%20Rate](https://developers.google.com/machine-learning/crash-course/classification/roc-and auc#:~:text=An%20ROC%20curve%20(receiver%20operating,False%20Positive%20Rate)
 - Harvard: [https://scholar.harvard.edu/files/msseo/files/5.convergence_informatics_week5.pdf](https://scholar.harvard.edu/files/msseo/files/5.convergence_informatics_week5.pdf)
 
 ## Model Explanations:
