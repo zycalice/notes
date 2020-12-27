@@ -9,6 +9,9 @@ permalink: /resources/
 ## Efficient Algorithm
 - Stanford, NP-Completeness: [http://web.stanford.edu/class/archive/cs/cs103/cs103.1152/lectures/27/Small27.pdf](http://web.stanford.edu/class/archive/cs/cs103/cs103.1152/lectures/27/Small27.pdf)
 
+## Discrete Math
+- Berkeley: https://www.eecs70.org/
+
 ## Statistics
 - CTT: [https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html](https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html)
 - CLT: [https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf](https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf)
