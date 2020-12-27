@@ -29,3 +29,9 @@ Algorithm efficiency is most commonly measured by the algorithm runtime, and an 
   - No efficient algorithm has been found to solve an NP-complete problem.
   - No one has proven that an efficient algorithm to solve an NP-complete problem is impossible.
   - If an efficient algorithm exists for one NP-complete problem, then all NP-complete problem can be solved efficiently.
+  
+### Algorithms for data structures:
+Data structures not only define how data is organized and stored, but also the operations performed on the data structure. While common operations include inserting, removing, and searching for data, the algorithms to implement those operations are typically specific to each data structure. Ex: Appending an item to a linked list requires a different algorithm than appending an item to an array.
+
+
+
