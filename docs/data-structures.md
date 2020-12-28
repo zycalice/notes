@@ -52,3 +52,8 @@ Abstraction means to have a user interact with an item at a high-level, with low
 
 Using abstract data types enables programmers or algorithm designers to focus on higher-level operations and algorithms, thus improving programmer efficiency. However, knowledge of the underlying implementation is needed to analyze or improve the runtime efficiency.
 
+### Runtime complexity, best case, and worst case
+An algorithm's runtime complexity is a function, T(N), that represents the number of constant time operations performed by the algorithm on an input of size N. Runtime complexity is discussed in more detail elsewhere.
+
+Because an algorithm's runtime may vary significantly based on the input data, a common approach is to identify best and worst case scenarios. An algorithm's best case is the scenario where the algorithm does the minimum possible number of operations. An algorithm's worst case is the scenario where the algorithm does the maximum possible number of operations.
+
