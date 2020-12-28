@@ -57,3 +57,9 @@ An algorithm's runtime complexity is a function, T(N), that represents the numbe
 
 Because an algorithm's runtime may vary significantly based on the input data, a common approach is to identify best and worst case scenarios. An algorithm's best case is the scenario where the algorithm does the minimum possible number of operations. An algorithm's worst case is the scenario where the algorithm does the maximum possible number of operations.
 
+### Space complexity
+
+An algorithm's space complexity is a function, S(N), that represents the number of fixed-size memory units used by the algorithm for an input of size N. Ex: The space complexity of an algorithm that duplicates a list of numbers is S(N) = 2N + k, where k is a constant representing memory used for things like the loop counter and list pointers.
+
+Space complexity includes the input data and additional memory allocated by the algorithm. An algorithm's auxiliary space complexity is the space complexity not including the input data. Ex: An algorithm to find the maximum number in a list will have a space complexity of S(N) = N + k, but an auxiliary space complexity of S(N) = k, where k is a constant.
+
