@@ -37,4 +37,14 @@ Data structures not only define how data is organized and stored, but also the o
 An abstract data type (ADT) is a data type described by predefined user operations, such as "insert data at rear," without indicating how each operation is implemented. An ADT can be implemented using different underlying data structures. However, a programmer need not have knowledge of the underlying implementation to use an ADT.\
 Ex: A list is a common ADT for holding ordered data, having operations like append a data item, remove a data item, search whether a data item exists, and print the list. A list ADT is commonly implemented using arrays or linked list data structures.
 
+- List: A list is an ADT for holding ordered data. (Array, linked list)
+- Dynamic array: A dynamic array is an ADT for holding ordered data and allowing indexed access. (Array)
+- Stack: A stack is an ADT in which items are only inserted on or removed from the top of a stack. (Linked list)
+- Queue: A queue is an ADT in which items are inserted at the end of the queue and removed from the front of the queue. (Linked list)
+- Deque: A deque (pronounced "deck" and short for double-ended queue) is an ADT in which items can be inserted and removed at both the front and back. (Linked list)
+- Bag: A bag is an ADT for storing items in which the order does not matter and duplicate items are allowed. (Array, linked list)
+- Set: A set is an ADT for a collection of distinct items. (Binary search tree, hash table)
+- Priority queue: A priority queue is a queue where each item has a priority, and items with higher priority are closer to the front of the queue than items with lower priority. (Heap)
+- Dictionary (Map): A dictionary is an ADT that associates (or maps) keys with values. (Hash table, binary search tree)
+
 
