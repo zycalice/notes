@@ -71,6 +71,7 @@ permalink: /resources/
 - DataCamp practice: [https://campus.datacamp.com/courses/model-validation-in-python/cross-validation?ex=6](https://campus.datacamp.com/courses/model-validation-in-python/cross-validation?ex=6)
 
 ## NLP
+- N-gram: [https://web.stanford.edu/~jurafsky/slp3/3.pdf](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
 - Eigenwords: [https://jmlr.csail.mit.edu/papers/volume16/dhillon15a/dhillon15a.pdf](https://jmlr.csail.mit.edu/papers/volume16/dhillon15a/dhillon15a.pdf)
 - NLP and argument: [https://www.aclweb.org/anthology/P16-5002/](https://www.aclweb.org/anthology/P16-5002/)
 - NLP and persuasion: [https://nlds.soe.ucsc.edu/persuasion_persona](https://nlds.soe.ucsc.edu/persuasion_persona)
