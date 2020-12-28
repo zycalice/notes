@@ -33,7 +33,7 @@ Algorithm efficiency is most commonly measured by the algorithm runtime, and an 
 ### Algorithms for data structures:
 Data structures not only define how data is organized and stored, but also the operations performed on the data structure. While common operations include inserting, removing, and searching for data, the algorithms to implement those operations are typically specific to each data structure. Ex: Appending an item to a linked list requires a different algorithm than appending an item to an array.
 
-### Abstract Data Types:
+### Abstract data types:
 An abstract data type (ADT) is a data type described by predefined user operations, such as "insert data at rear," without indicating how each operation is implemented. An ADT can be implemented using different underlying data structures. However, a programmer need not have knowledge of the underlying implementation to use an ADT.\
 Ex: A list is a common ADT for holding ordered data, having operations like append a data item, remove a data item, search whether a data item exists, and print the list. A list ADT is commonly implemented using arrays or linked list data structures.
 
@@ -47,4 +47,8 @@ Ex: A list is a common ADT for holding ordered data, having operations like appe
 - Priority queue: A priority queue is a queue where each item has a priority, and items with higher priority are closer to the front of the queue than items with lower priority. (Heap)
 - Dictionary (Map): A dictionary is an ADT that associates (or maps) keys with values. (Hash table, binary search tree)
 
+### Abstraction and optimization
+Abstraction means to have a user interact with an item at a high-level, with lower-level internal details hidden from the user. ADTs support abstraction by hiding the underlying implementation details and providing a well-defined set of operations for using the ADT.
+
+Using abstract data types enables programmers or algorithm designers to focus on higher-level operations and algorithms, thus improving programmer efficiency. However, knowledge of the underlying implementation is needed to analyze or improve the runtime efficiency.
 
