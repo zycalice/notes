@@ -110,7 +110,7 @@ Because when it is 4.5 we take 4, it takes one step less to reduce to empty list
 ### Constant Time Algorithm
 In practice, designing an efficient algorithm aims to lower the amount of time that an algorithm runs. However, a single algorithm can always execute more quickly on a faster processor. Therefore, the theoretical analysis of an algorithm describes runtime in terms of number of constant time operations, not nanoseconds. A constant time operation is an operation that, for a given processor, always operates in the same amount of time, regardless of input values.
 
-### Identifying constant time operations
+#### Identifying constant time operations
 The programming language being used, as well as the hardware running the code, both affect what is and what is not a constant time operation. Ex: Most modern processors perform arithmetic operations on integers and floating point values at a fixed rate that is unaffected by operand values. Part of the reason for this is that the floating point and integer values have a fixed size. Below summarizes operations that are generally considered constant time operations.
 * Addition, subtraction, multiplication, and division of fixed size integer or floating point values.	
 * Assignment of a reference, pointer, or other fixed size data value.	
@@ -118,9 +118,20 @@ The programming language being used, as well as the hardware running the code, b
 * Read or write an array element at a particular index.	
 
 Examples:
+
 * Copying all characters in the string would require more operations for longer strings. But assignment of a pointer/reference is a constant time operation.
 * Division is often slower than multiplication on many processors. But each division operation takes the same amount of time regardless of operand values, so is still a constant time operation.
 * The hardware running the code is NOT the only thing that affects what is and what is not a constant time operation. The programming language also affects what is a constant time operation. Ex: A programming language could provide variable size floating point values as the only available numerical type and implement arithmetic operations in software. Since the values are not fixed size, arithmetic operations would not be constant time.
+
+### Growth of functions and complexity
+#### Upper and Lower Bounds
+An algorithm with runtime complexity T(N) has a lower bound and an upper bound.
+
+* Lower bound: A function f(N) that is ≤ the best case T(N), for all values of N ≥ 1.
+* Upper bound: A function f(N) that is ≥ the worst case T(N), for all values of N ≥ 1.
+
+Ex: An algorithm with best case runtime T(N) = 7N + 36 and worst case runtime T(N) = 3N^2 + 10N + 17, has a lower bound 7N and an upper bound 30N^2. 
+These lower and upper bounds provide a general picture of the runtime, while using simpler functions than the exact runtime.
 
 
 
