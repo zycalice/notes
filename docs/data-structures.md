@@ -107,3 +107,8 @@ Example: reduce 32 elements to an empty list - max steps to max (6 steps):
 
 Because when it is 4.5 we take 4, it takes one step less to reduce to empty list when always searching the smaller sublist.
 
+### Constant Time Algorithm
+In practice, designing an efficient algorithm aims to lower the amount of time that an algorithm runs. However, a single algorithm can always execute more quickly on a faster processor. Therefore, the theoretical analysis of an algorithm describes runtime in terms of number of constant time operations, not nanoseconds. A constant time operation is an operation that, for a given processor, always operates in the same amount of time, regardless of input values.
+
+
+
