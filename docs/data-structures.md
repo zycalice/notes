@@ -117,5 +117,11 @@ The programming language being used, as well as the hardware running the code, b
 * Comparison of two fixed size data values.	
 * Read or write an array element at a particular index.	
 
+Examples:
+* Copying all characters in the string would require more operations for longer strings. But assignment of a pointer/reference is a constant time operation.
+* Division is often slower than multiplication on many processors. But each division operation takes the same amount of time regardless of operand values, so is still a constant time operation.
+* The hardware running the code is NOT the only thing that affects what is and what is not a constant time operation. The programming language also affects what is a constant time operation. Ex: A programming language could provide variable size floating point values as the only available numerical type and implement arithmetic operations in software. Since the values are not fixed size, arithmetic operations would not be constant time.
+
+
 
 
