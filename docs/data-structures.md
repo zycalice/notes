@@ -134,5 +134,11 @@ Ex: An algorithm with best case runtime T(N) = 7N + 36 and worst case runtime T(
 These lower and upper bounds provide a general picture of the runtime, while using simpler functions than the exact runtime.
 
 
+#### Growth rates and asymptotic notations
+An additional simplification can factor out the constant from a bounding function, leaving a function that categorizes the algorithm's growth rate. Ex: Instead of saying that an algorithm's runtime function has an upper bound of 30N^2, the algorithm could be described as having a worst case growth rate of N^2. Asymptotic notation is the classification of runtime complexity that uses functions that indicate only the growth rate of a bounding function. Three asymptotic notations are commonly used in complexity analysis:
+
+* O notation provides a growth rate for an algorithm's upper bound.
+* Ω notation provides a growth rate for an algorithm's lower bound.
+* Θ notation provides a growth rate that is both an upper and lower bound.
 
 
