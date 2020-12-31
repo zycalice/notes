@@ -111,6 +111,11 @@ Because when it is 4.5 we take 4, it takes one step less to reduce to empty list
 In practice, designing an efficient algorithm aims to lower the amount of time that an algorithm runs. However, a single algorithm can always execute more quickly on a faster processor. Therefore, the theoretical analysis of an algorithm describes runtime in terms of number of constant time operations, not nanoseconds. A constant time operation is an operation that, for a given processor, always operates in the same amount of time, regardless of input values.
 
 ### Identifying constant time operations
-The programming language being used, as well as the hardware running the code, both affect what is and what is not a constant time operation. Ex: Most modern processors perform arithmetic operations on integers and floating point values at a fixed rate that is unaffected by operand values. Part of the reason for this is that the floating point and integer values have a fixed size. The table below summarizes operations that are generally considered constant time operations.
+The programming language being used, as well as the hardware running the code, both affect what is and what is not a constant time operation. Ex: Most modern processors perform arithmetic operations on integers and floating point values at a fixed rate that is unaffected by operand values. Part of the reason for this is that the floating point and integer values have a fixed size. Below summarizes operations that are generally considered constant time operations.
+* Addition, subtraction, multiplication, and division of fixed size integer or floating point values.	
+* Assignment of a reference, pointer, or other fixed size data value.	
+* Comparison of two fixed size data values.	
+* Read or write an array element at a particular index.	
+
 
 
