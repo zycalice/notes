@@ -103,7 +103,7 @@ Example: reduce 32 elements to an empty list - max steps to max (6 steps):
 * step 3: reduce from [22,31] to [28,31] by checking 27
 * step 4: reduce from [28,31] to [30,31] by checking 29
 * step 5: reduce from [30,31] to [31] by checking 30
-* step 6: reduce from [31] to [0] by checking 31
+* step 6: reduce from [31] to [] by checking 31
 
 Because when it is 4.5 we take 4, it takes one step less to reduce to empty list when always searching the smaller sublist.
 
