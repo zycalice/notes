@@ -64,7 +64,7 @@ An algorithm's space complexity is a function, S(N), that represents the number 
 Space complexity includes the input data and additional memory allocated by the algorithm. An algorithm's auxiliary space complexity is the space complexity not including the input data. Ex: An algorithm to find the maximum number in a list will have a space complexity of S(N) = N + k, but an auxiliary space complexity of S(N) = k, where k is a constant.
 
 ### Linear Search and Binary Search
-Linear search performe search one by one. Bineary search starts with the middle. If the middle is 4.5, take 4. Puesdo code below:
+Linear search performe search one by one. Bineary search starts with the middle of a list, sorted from 0 to N. If the middle is 4.5, take 4. Puesdo code below:
 ```
 BinarySearch(numbers, numbersSize, key) {
    mid = 0
