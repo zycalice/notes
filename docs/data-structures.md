@@ -88,5 +88,15 @@ BinarySearch(numbers, numbersSize, key) {
 }
 ```
 ### Binary search efficiency
-Binary search is incredibly efficient in finding an element within a sorted list. During each iteration or step of the algorithm, binary search reduces the search space (i.e., the remaining elements to search within) by half. The search terminates when the element is found or the search space is empty (element not found). For a 32 element list, if the search key is not found, the search space is halved to have 16 elements, then 8, 4, 2, 1, and finally none, requiring only 6 steps. For an N element list, the maximum number of steps required to reduce the search space to an empty sublist is log_2(N)+1. (+1 is because you need to take the last step to reduce the last element to empty.)
+Binary search is incredibly efficient in finding an element within a sorted list. During each iteration or step of the algorithm, binary search reduces the search space (i.e., the remaining elements to search within) by half. The search terminates when the element is found or the search space is empty (element not found). For a 32 element list, if the search key is not found, the search space is halved to have 16 elements, then 8, 4, 2, 1, and finally none, requiring only 6 steps. For an N element list, the maximum number of steps required to reduce the search space to an empty sublist is log_2(N)+1. (+1 is because you need to take the last step to reduce the last element to empty.) Example:
+
+reduce 32 elements to an empty list - max steps:
+* step 1: reduce from [0,31] to [0,15] by checking 15
+* step 2: reduce from [0,15] to [0,7] by checking 7
+* step 3: reduce from [0.7] to [0,3] by checking 3
+* step 4: reduce from [0,3] to [0,1] by checking 1
+* step 5: reduce from [0,1] to [0] by checking 0
+* step 6: reduce from [0] t0 [] 
+
+It only checked 5 elements in the list, but took 6 steps to reduce to an empty list.
 
