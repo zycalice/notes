@@ -90,21 +90,20 @@ BinarySearch(numbers, numbersSize, key) {
 ### Binary search efficiency
 Binary search is incredibly efficient in finding an element within a sorted list. During each iteration or step of the algorithm, binary search reduces the search space (i.e., the remaining elements to search within) by half. The search terminates when the element is found or the search space is empty (element not found). For a 32 element list, if the search key is not found, the search space is halved to have 16 elements, then 8, 4, 2, 1, and finally none, requiring only 6 steps. For an N element list, the maximum number of steps required to reduce the search space to an empty sublist is log_2(N)+1. (+1 is because you need to take the last step to reduce the last element to empty.) 
 
-Example: reduce 32 elements to an empty list - max steps to min:
-* step 1: reduce from [0,31] to [0,15] by checking 15
-* step 2: reduce from [0,15] to [0,7] by checking 7
-* step 3: reduce from [0,7] to [0,3] by checking 3
-* step 4: reduce from [0,3] to [0,1] by checking 1
-* step 5: reduce from [0,1] to [0] by checking 0
-* step 6: reduce from [0] to [] 
+Example: reduce 32 elements to an empty list - max steps to min (only 5 steps):
+* step 1: reduce from [0,31] to [0,14] by checking 15
+* step 2: reduce from [0,14] to [0,6] by checking 7
+* step 3: reduce from [0,6] to [0,2] by checking 3
+* step 4: reduce from [0,2] to [0] by checking 1
+* step 5: reduce from [0] to [] by checking 0
 
-It only checked 5 elements in the list, but took 6 steps to reduce to an empty list.
+Example: reduce 32 elements to an empty list - max steps to max (6 steps):
+* step 1: reduce from [0,31] to [16,31] by checking 15
+* step 2: reduce from [16,31] to [22,31] by checking 23
+* step 3: reduce from [22,31] to [28,31] by checking 27
+* step 4: reduce from [28,31] to [30,31] by checking 29
+* step 5: reduce from [30,31] to [31] by checking 30
+* step 6: reduce from [31] to [0] by checking 31
 
-Example: reduce 32 elements to an empty list - max steps to max:
-* step 1: reduce from [0,31] to [15,31] by checking 15
-* step 2: reduce from [15,31] to [23,31] by checking 23
-* step 3: reduce from [23,31] to [27,31] by checking 27
-* step 4: reduce from [27,31] to [29,31] by checking 29
-* step 5: reduce from [29,31] to [30,31] by checking 30
-* step 6: reduce from [30,31] to [31] 
+Because when it is 4.5 we take 4, it takes one step less to reduce to empty list when always searching the smaller sublist.
 
