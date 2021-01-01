@@ -145,3 +145,16 @@ An additional simplification can factor out the constant from a bounding functio
   T(N) = Θ(f(N)) where T(N) = O(f(N)) = Ω(f(N))
 
 
+
+### Big O notation
+Big O notation is a mathematical way of describing how a function (running time of an algorithm) generally behaves in relation to the input size. In Big O notation, all functions that have the same growth rate (as determined by the highest order term of the function) are characterized using the same Big O notation. In essence, all functions that have the same growth rate are considered equivalent in Big O notation.
+
+Some examples:
+* log_2(N) = O(log(N))The logarithm base does not affect the growth rate, so the base is omitted in Big O notation. Converting from one logarithm base to another base involves a constant factor, which can be simplified in Big O notation.
+* 2 * O(3N) = O(N)
+* O(3N^3) + O(N^2) = O(3N^3 + N^2) = O(N^3)
+
+
+
+
+
