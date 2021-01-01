@@ -133,7 +133,6 @@ An algorithm with runtime complexity T(N) has a lower bound and an upper bound.
 Ex: An algorithm with best case runtime T(N) = 7N + 36 and worst case runtime T(N) = 3N^2 + 10N + 17, has a lower bound 7N and an upper bound 30N^2. 
 These lower and upper bounds provide a general picture of the runtime, while using simpler functions than the exact runtime.
 
-
 #### Growth rates and asymptotic notations
 An additional simplification can factor out the constant from a bounding function, leaving a function that categorizes the algorithm's growth rate. Ex: Instead of saying that an algorithm's runtime function has an upper bound of 30N^2, the algorithm could be described as having a worst case growth rate of N^2. Asymptotic notation is the classification of runtime complexity that uses functions that indicate only the growth rate of a bounding function. Three asymptotic notations are commonly used in complexity analysis:
 
@@ -143,7 +142,6 @@ An additional simplification can factor out the constant from a bounding functio
   T(N) = Ω(f(N)) where a positive constant c exits such that for all N>=1, T(N)>=c*f(N) 
 * Θ notation provides a growth rate that is both an upper and lower bound.
   T(N) = Θ(f(N)) where T(N) = O(f(N)) = Ω(f(N))
-
 
 
 ### Big O notation
@@ -157,6 +155,16 @@ Some examples:
 ### Algorithm Analysis
 #### Worse Case Algorithm Analysis
 To analyze how runtime of an algorithm scales as the input size increases, we first determine how many operations the algorithm executes for a specific input size, N. Then, the big-O notation for that function is determined. Algorithm runtime analysis often focuses on the worst-case runtime complexity. The worst-case runtime of an algorithm is the runtime complexity for an input that results in the longest execution. Other runtime analyses include best-case runtime and average-case runtime. Determining the average-case runtime requires knowledge of the statistical properties of the expected data inputs.
+
+### Analyzing the time complexity of recursive algorithms
+#### Recurrence relations
+The runtime complexity T(N) of a recursive function will have function T on both sides of the equation. Ex: Binary search performs constant time operations, then a recursive call that operates on half of the input, making the runtime complexity T(N) = O(1) + T(N / 2). Such a function is known as a recurrence relation: A function f(N) that is defined in terms of the same function operating on a value < N.
+
+Using O-notation to express runtime complexity of a recursive function requires solving the recurrence relation. For simpler recursive functions such as binary search, runtime complexity can be determined by expressing the number of function calls as a function of N.
+
+#### Recursion trees
+The runtime complexity of any recursive function can be split into 2 parts: operations done directly by the function and operations done by recursive calls made by the function. Ex: For binary search's T(N) = O(1) + T(N / 2), O(1) represents operations directly done by the function and T(N / 2) represents operation done by a recursive call. A useful tool for solving recurrences is a recursion tree: A visual diagram of an operation done by a recursive function, that separates operations done directly by the function and operations done by recursive calls.
+
 
 
 
