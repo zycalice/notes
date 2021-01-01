@@ -154,7 +154,9 @@ Some examples:
 * 2 * O(3N) = O(N)
 * O(3N^3) + O(N^2) = O(3N^3 + N^2) = O(N^3)
 
-
+### Algorithm Analysis
+#### Worse Case Algorithm Analysis
+To analyze how runtime of an algorithm scales as the input size increases, we first determine how many operations the algorithm executes for a specific input size, N. Then, the big-O notation for that function is determined. Algorithm runtime analysis often focuses on the worst-case runtime complexity. The worst-case runtime of an algorithm is the runtime complexity for an input that results in the longest execution. Other runtime analyses include best-case runtime and average-case runtime. Determining the average-case runtime requires knowledge of the statistical properties of the expected data inputs.
 
 
 
