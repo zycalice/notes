@@ -170,8 +170,26 @@ Sorting is the process of converting a list of elements into ascending (or desce
 
 The challenge of sorting is that a program can't "see" the entire list to know where to move an element. Instead, a program is limited to simpler steps, typically observing or swapping just two elements at a time. So sorting just by swapping values is an important part of sorting algorithms.
 
+#### Selection sort
+Selection sort is a sorting algorithm that treats the input as two parts, a sorted part and an unsorted part, and repeatedly selects the proper next value to move from the unsorted part to the end of the sorted part.
+```
+for (i = 0; i < numbersSize - 1; ++i) {
 
+   // Find index of smallest remaining element
+   indexSmallest = i
+   for (j = i + 1; j < numbersSize; ++j) {
 
+      if (numbers[j] < numbers[indexSmallest]) {
+         indexSmallest = j
+      }
+   }
+
+   // Swap numbers[i] and numbers[indexSmallest]
+   temp = numbers[i]
+   numbers[i] = numbers[indexSmallest]
+   numbers[indexSmallest] = temp
+}
+```
 
 
 
