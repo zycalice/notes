@@ -29,7 +29,7 @@ September 2015 – December 2015
 
 * * *
 ## Professional and Research Experience
-### University of Pennsylvania, School of Engineering and Applied Sciences, Research Assistance
+### University of Pennsylvania, School of Engineering and Applied Sciences, Research Assistant
 Remmote\
 Jan 2021 - Present
 * Explore classifer bias for protected classes ([World Well-Being Project](https://www.wwbp.org/))
