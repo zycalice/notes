@@ -28,7 +28,12 @@ September 2015 – December 2015
 * Courses: Risk Management, Quality Management, Management of Technology 
 
 * * *
-## Professional Experience
+## Professional and Research Experience
+### University of Pennsylvania, School of Engineering and Applied Sciences
+Remmote\
+Jan 2021 - Present
+* Explore classifer bias for protected classes
+
 ### Advanced Continuing Education Association, Data Science Intern 
 Boston, MA/Remote\
 June 2020 – August 2020
