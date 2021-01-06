@@ -15,6 +15,7 @@ permalink: /resources/
 ## Statistics
 - CTT: [https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html](https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html)
 - CLT: [https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf](https://www.me.psu.edu/cimbala/me345/Lectures/Central_Limit_Theorem.pdf)
+- Regression to mean and how to remove it: [https://www.iwh.on.ca/what-researchers-mean-by/regression-to-mean](https://www.iwh.on.ca/what-researchers-mean-by/regression-to-mean)
 
 ## PAC Learning and VC dimention
 - CMU: [https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf](https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf)
