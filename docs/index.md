@@ -10,7 +10,7 @@ title: main
   <img src="./images/profile-pic.jpg" class="inline" width="300"/>
 </p>
 
-I am interested in applying Natural Language Processing/Machine Learning to challenge current limitations in Tech, Law, Criminal Justice, and Media/Entertainment with a deep understanding of algorithm fairness.
+I am interested in applying Natural Language Processing/Machine Learning to challenge the current limitations in Tech, Law, Criminal Justice, and Media/Entertainment with a deep understanding of the algorithm theories. I am also passionate about detecting algorithm bias and developing models that are fair.
 
 I care deeply about data science for social good and believe that our research in technology and algorithms should benefit the public in a fair way. Therefore, I am particularly passionate about ML/NLP applications in Tech, Law, Media/Entertainment. Check out my projects below!
 
