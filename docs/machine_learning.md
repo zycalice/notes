@@ -113,10 +113,6 @@ plt.show()
 * Splits based on each feature, and select feature order by maximizing information gain (difference in entropy)
 * Assumes a hierchy structure
 * Easy to overfit; need ways to regularize the model
-* Loss:
-   * 0-1 for classification
-   * mse for regression
-
 
 ### Randome Forest
 * Uses bagging (subset of n) and boosting (subset of features) as weak learners
