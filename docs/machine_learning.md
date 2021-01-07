@@ -15,7 +15,7 @@ permalink: /machine_learning/
     * L0 rgularizer: counts of non-zero weights (not convex), thus penalizes smaller weights to 0
     * elastic net: L1 + L2 loss
 
-### Logitic Regression:
+### Logistic Regression:
 * p(Y|X)  = sigmoid($w^Tx$) transforms $w^Tx$ to a probability
 * Where the sigmoid is s(x) = $1/(1+e^{-x})$
 * Threshold is typically p(Y|X) less or more than 0.5
