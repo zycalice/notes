@@ -22,7 +22,7 @@ permalink: /machine_learning/
 * MLE
 * Loss function: cross entropy loss (this loss does not have closed-form solution, so we need to do gradient descent)
    * can also add regularization
-* In general, we can have multiple predictor variables in a logistic regression model. The cofficient are the log odds of p/(1-p)
+* In general, we can have multiple predictor variables in a logistic regression model. The cofficients are the log odds of p/(1-p)
 
 I have written a logistic regression algrithm below:
 ```
