@@ -39,6 +39,10 @@ permalink: /resources/
 - Pearson and Spearman Correlation Comparison: [https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/](https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/)
 - Logistic regression: [https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/#:~:text=In%20general%2C%20we%20can%20have,in%20a%20logistic%20regression%20model.&text=Each%20exponentiated%20coefficient%20is%20the,other%20variables%20at%20certain%20value.](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/#:~:text=In%20general%2C%20we%20can%20have,in%20a%20logistic%20regression%20model.&text=Each%20exponentiated%20coefficient%20is%20the,other%20variables%20at%20certain%20value.)
 
+
+## Trees:
+- GTech: [https://mdav.ece.gatech.edu/ece-6254-spring2017/notes/22-decision-trees.pdf](https://mdav.ece.gatech.edu/ece-6254-spring2017/notes/22-decision-trees.pdf)
+
 ## Gradient Descent
 - UBC: [https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf](https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf)
 - Berkeley: [https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c03_p47-84.pdf](https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c03_p47-84.pdf)
