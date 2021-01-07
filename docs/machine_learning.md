@@ -15,6 +15,7 @@ permalink: /machine_learning/
 * Where the sigmoid is s(x) = $1/(1+e^{-x})$
 * Threshold is typically p(Y|X) less or more than 0.5
 * MLE
+* Loss function: cross entropy loss
 
 I have written a logistic regression algrithm below:
 ```
