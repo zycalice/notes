@@ -9,6 +9,11 @@ permalink: /machine_learning/
 * y = $w^Tx$
 * MLE
 * Could add ridge penalizer: MAP
+* Loss Function
+    * L2 loss: quatratic loss/ mean squared loss
+    * L1 loss: mean absolute loss
+    * L0 loss: count of non-zero weights (not convex)
+    * elastic net: L1 + L2 loss
 
 ### Logitic Regression:
 * p(Y|X)  = sigmoid($w^Tx$) transforms $w^Tx$ to a probability
