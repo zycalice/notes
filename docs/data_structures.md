@@ -9,11 +9,11 @@ permalink: /data_structures/
 Authors:
   - Roman Lysecky / Professor of Electrical and Computer Engineering / Univ. of Arizona
   - Frank Vahid / Professor of Computer Science and Engineering / Univ. of California, Riverside
-  - Evan Olds / Content Developer / zyBooks\
-  
+  - Evan Olds / Content Developer / zyBooks
+ 
 Senior Contributors:
   - Tony Givargis / Professor of Computer Science / Univ. of California, Irvine
-  - Susan Lysecky / Senior Content Developer / zyBooks\
+  - Susan Lysecky / Senior Content Developer / zyBooks
   
 Additional Contributors
   - Joe Hummel / University of Illinois at Chicago (Reviewer)
