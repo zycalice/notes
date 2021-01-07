@@ -9,8 +9,8 @@ permalink: /machine_learning/
 y = $w^Tx$
 
 ### Logitic Regression:
-p(Y|X)  = sigmoid($w^Tx$)
-Where the sigmoid is s(x) = $1/(1+e^-x)$
+p(Y|X)  = sigmoid($w^Tx$) transforms $w^Tx$ to a probability
+Where the sigmoid is s(x) = $1/(1+e^{-x})$
 Threshold is typically p(Y|X) less or more than 0.5
 
 ## Clustering
