@@ -130,11 +130,12 @@ plt.show()
 * Each feature is treated equally, so the clusters produced by K-means will look spherical. We can also infer this by looking at the sum of squares in the objective function, which we have seen to be related to spherical Gaussians.
 * Each cluster assignment in the optimization is a hard assignment - each point belongs in exactly one cluster. A soft assignment would assign each point to a distribution over the clusters, which can encode not only which cluster a point belongs to, but also how far it was from the other clusters.
 
-### Expectation Maximization: also an iterative process to cluster, but a "soft" verion of k-means. 
-
-EM1: A soft assignment would assign each point to a distribution over the
-clusters, which can encode not only which cluster a point belongs to, but also how far it was from the other clusters.
+### Guassian Mixture model: also an iterative process to cluster, but a "soft" verion of k-means. A soft assignment would assign each point to a distribution over the clusters, which can encode not only which cluster a point belongs to, but also how far it was from the other clusters.
 * Assumes cluster weights are equal $\pi_k = 1/k$
 * Assumes the covariance matrix are all $ \Sigma_k = \sigma*I $ for all clusters, which means each cluster has the same spherical structure
 * The only difference from K-means is that the assignments to cluster are soft (probabilistic), while K-means assignment is hard.
 
+
+### Both uses an **EM algorithm**
+
+([source](https://www.eecs189.org/static/notes/n19.pdf))
