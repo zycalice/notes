@@ -35,8 +35,9 @@ permalink: /resources/
 ## Recurrent Neural Network
 - Stanford: [https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
 
-## Linear Regression
+## Linear Regression and Logistic Regression
 - Pearson and Spearman Correlation Comparison: [https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/](https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/)
+- Logistic regression: [https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/#:~:text=In%20general%2C%20we%20can%20have,in%20a%20logistic%20regression%20model.&text=Each%20exponentiated%20coefficient%20is%20the,other%20variables%20at%20certain%20value.](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/#:~:text=In%20general%2C%20we%20can%20have,in%20a%20logistic%20regression%20model.&text=Each%20exponentiated%20coefficient%20is%20the,other%20variables%20at%20certain%20value.)
 
 ## Gradient Descent
 - UBC: [https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf](https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf)
