@@ -103,6 +103,29 @@ plt.show()
 
 ```
 
+## Perceptron and SVM
+### Perceptron
+### SVM
+
+
+## Trees
+### Decision tree: 
+* Splits based on each feature, and select feature order by maximizing information gain (difference in entropy)
+* Assumes a hierchy structure
+* Easy to overfit; need ways to regularize the model
+* Loss:
+   * 0-1 for classification
+   * mse for regression
+
+
+### Randome Forest
+* Uses bagging (subset of n) and boosting (subset of features) as weak learners
+* Two ways to regularize the model to prevent the tree based model to overfit
+
+### Gradient Tree Boosting
+
+
+
 ## Clustering
 ### K-means: an iterative process to assign data points to k number of groups based on distance to the center of the groups. Different initiation could lead to different results.
 * Assumes cluster weights are equal $\pi_k = 1/k$
