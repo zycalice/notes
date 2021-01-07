@@ -16,7 +16,7 @@ permalink: /machine_learning/
 * Threshold is typically p(Y|X) less or more than 0.5
 * MLE
 
-I have written a hand computed algrithm below:
+I have written a logistic regression algrithm below:
 ```
 # define helper functions
 def sigmoid(x):
