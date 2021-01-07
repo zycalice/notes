@@ -10,7 +10,7 @@ y = $w^Tx$
 
 ### Logitic Regression:
 p(Y|X)  = sigmoid($w^Tx$)
-Where the sigmoid is s(x) = $1/(1+e^-x)
+Where the sigmoid is s(x) = $1/(1+e^-x)$
 Threshold is typically p(Y|X) less or more than 0.5
 
 ## Clustering
