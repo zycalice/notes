@@ -10,9 +10,9 @@ permalink: /machine_learning/
 * MLE
 * Could add ridge penalizer: MAP
 * Loss Function
-    * L2 loss: quatratic loss/ mean squared loss
-    * L1 loss: mean absolute loss
-    * L0 loss: count of non-zero weights (not convex)
+    * L2 regularizer: quatratic loss/ mean squared loss
+    * L1 regularizer: mean absolute loss
+    * L0 rgularizer: count of non-zero weights (not convex)
     * elastic net: L1 + L2 loss
 
 ### Logitic Regression:
