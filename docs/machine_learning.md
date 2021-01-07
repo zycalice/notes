@@ -8,6 +8,7 @@ permalink: /machine_learning/
 ### Linear Regression:
 * y = $w^Tx$
 * MLE
+* Could add ridge penalizer: MAP
 
 ### Logitic Regression:
 * p(Y|X)  = sigmoid($w^Tx$) transforms $w^Tx$ to a probability
