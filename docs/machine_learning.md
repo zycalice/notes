@@ -9,10 +9,10 @@ permalink: /machine_learning/
 * y = $w^Tx$
 * MLE
 * Could add ridge penalizer: MAP
-* Loss Function
-    * L2 regularizer: quatratic loss/ mean squared loss
-    * L1 regularizer: mean absolute loss
-    * L0 rgularizer: count of non-zero weights (not convex)
+* Loss Function: base is mean squared error = mean(|y_pred - y_actual|^2) or regression squared error = sum(|y_pred - y_actual|^2)
+    * L2 regularizer: uses L2 norm of the weights as regularizer, thus penalizes larger weights
+    * L1 regularizer: uses L1 norm of the weights as regularizer, thus penalizes larger weights a little bit but also push smaller weights to 0
+    * L0 rgularizer: counts of non-zero weights (not convex), thus penalizes smaller weights to 0
     * elastic net: L1 + L2 loss
 
 ### Logitic Regression:
@@ -20,7 +20,8 @@ permalink: /machine_learning/
 * Where the sigmoid is s(x) = $1/(1+e^{-x})$
 * Threshold is typically p(Y|X) less or more than 0.5
 * MLE
-* Loss function: cross entropy loss
+* Loss function: cross entropy loss (this loss does not have closed-form solution, so we need to do gradient descent)
+   * can also add regularization
 
 I have written a logistic regression algrithm below:
 ```
