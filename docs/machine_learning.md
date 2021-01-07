@@ -4,6 +4,15 @@ permalink: /machine_learning/
 ---
 
 # Machine Learning
+## Linear Regression and Logistic Regression
+### Linear Regression:
+y = $w^Tx$
+
+### Logitic Regression:
+p(Y|X)  = sigmoid($w^Tx$)
+Where the sigmoid is s(x) = $1/(1+e^-x)
+Threshold is typically p(Y|X) less or more than 0.5
+
 ## Clustering
 ### K-means: a iterative process to assign data points to k number of groups based on distance to the center of the groups. Different initiation could lead to different results.
 * Assumes mixture weights are equal $\pi_k = 1/k$
