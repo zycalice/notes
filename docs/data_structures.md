@@ -175,7 +175,7 @@ Sorting is the process of converting a list of elements into ascending (or desce
 
 The challenge of sorting is that a program can't "see" the entire list to know where to move an element. Instead, a program is limited to simpler steps, typically observing or swapping just two elements at a time. So sorting just by swapping values is an important part of sorting algorithms.
 
-#### Selection sort (runtime O(N^2))
+#### Selection sort - runtime O(N^2)
 Selection sort is a sorting algorithm that treats the input as two parts, a sorted part and an unsorted part, and repeatedly selects the proper next value to move from the unsorted part to the end of the sorted part.
 ```
 for (i = 0; i < numbersSize - 1; ++i) {
@@ -196,7 +196,7 @@ for (i = 0; i < numbersSize - 1; ++i) {
 }
 ```
 
-#### Insertion sort (runtime O(N))
+#### Insertion sort - runtime O(N^2)
 Insertion sort is a sorting algorithm that treats the input as two parts, a sorted part and an unsorted part, and repeatedly inserts the next value from the unsorted part into the correct location in the sorted part.
 
 The index variable i denotes the starting position of the current element in the unsorted part. Initially, the first element (i.e., element at index 0) is assumed to be sorted, so the outer for loop initializes i to 1. The inner while loop inserts the current element into the sorted part by repeatedly swapping the current element with the elements in the sorted part that are larger. Once a smaller or equal element is found in the sorted part, the current element has been inserted in the correct location and the while loop terminates.
@@ -217,6 +217,8 @@ for (i = 1; i < numbersSize; ++i) {
    }
 }
 ```
+
+Insertion sort's nearly sorted run time is O(N). For each outer loop execution, if the element is already in sorted position, only a single comparison is made. Each element not in sorted position requires at most N comparisons. If there are a constant number, C, of unsorted elements, sorting the N - C sorted elements requires one comparison each, and sorting the C unsorted elements requires at most N comparisons each. The runtime for nearly sorted inputs is O((N - C) * 1 + C * N) = O(N).
 
 
 
