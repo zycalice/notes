@@ -196,6 +196,23 @@ for (i = 0; i < numbersSize - 1; ++i) {
 }
 ```
 
+#### Insertion sort
+Insertion sort is a sorting algorithm that treats the input as two parts, a sorted part and an unsorted part, and repeatedly inserts the next value from the unsorted part into the correct location in the sorted part.
+```
+for (i = 1; i < numbersSize; ++i) {
+   j = i
+   // Insert numbers[i] into sorted part
+   // stopping once numbers[i] in correct position
+   while (j > 0 && numbers[j] < numbers[j - 1]) {
+       
+      // Swap numbers[j] and numbers[j - 1]
+      temp = numbers[j]
+      numbers[j] = numbers[j - 1]
+      numbers[j - 1] = temp
+      --j
+   }
+}
+```
 
 
 
