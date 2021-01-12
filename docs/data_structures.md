@@ -248,3 +248,10 @@ InsertionSortInterleaved(numbers, numbersSize, startIndex, gap) {
 }
 ```
 For list = [88, 67, 91, 45, 14, 68, 71, 26, 64], we need to call (list, 9, 0, 3), (list, 9, 1, 3), (list, 9, 2, 3) to sort interleaved lists, and then finally (list, 9, 0, 1) to sort the overall nearly sorted list.
+
+##### Shell sort
+Shell sort begins by picking an arbitrary collection of gap values. For each gap value K, K calls are made to the insertion sort variant function to sort K interleaved lists. Shell sort ends with a final gap value of 1, to finish with the regular insertion sort.
+
+Shell sort tends to perform well when choosing gap values in descending order. A common option is to choose powers of 2 minus 1, in descending order. Ex: For an array of size 100, gap values would be 63, 31, 15, 7, 3, and 1. This gap selection technique results in shell sort's time complexity being no worse than O(N^(3/2)).
+
+Using gap values that are powers of 2 or in descending order is not required. Shell sort will correctly sort arrays using any positive integer gap values in any order, provided a gap value of 1 is included.
