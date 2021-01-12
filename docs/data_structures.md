@@ -227,3 +227,24 @@ Shell sort is a sorting algorithm that treats the input as a collection of inter
 Shell sort begins by choosing a gap value K and sorting K interleaved lists in place. Shell sort finishes by performing a standard insertion sort on the entire array. Because the interleaved parts have already been sorted, smaller elements will be close to the array's beginning and larger elements towards the end. Insertion sort can then quickly sort the nearly-sorted array.
 
 Any positive integer gap value can be chosen. In the case that the array size is not evenly divisible by the gap value, some interleaved lists will have fewer items than others.
+
+##### Insertion sort for interleaved lists
+If a gap value of K is chosen, creating K entirely new lists would be computationally expensive. Instead of creating new lists, shell sort sorts interleaved lists in-place with a variation of the insertion sort algorithm. The insertion sort algorithm variant redefines the concept of "next" and "previous" items. For an item at index X, the next item is at X + K, instead of X + 1, and the previous item is at X - K instead of X - 1.
+```
+InsertionSortInterleaved(numbers, numbersSize, startIndex, gap) {
+   i = 0
+   j = 0
+   temp = 0  // Temporary variable for swap
+
+   for (i = startIndex + gap; i < numbersSize; i = i + gap) {
+      j = i
+      while (j - gap >= startIndex && numbers[j] < numbers[j - gap]) {
+         temp = numbers[j]
+         numbers[j] = numbers[j - gap]
+         numbers[j - gap] = temp
+         j = j - gap
+      }
+   }
+}
+```
+For list = [88, 67, 91, 45, 14, 68, 71, 26, 64], we need to call (list, 9, 0, 3), (list, 9, 1, 3), (list, 9, 2, 3) to sort interleaved lists, and then finally (list, 9, 0, 1) to sort the overall nearly sorted list.
