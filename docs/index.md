@@ -18,3 +18,5 @@ I care deeply about data science for social good and believe that our research i
 - [Fake News Detection](https://github.com/zycalice/fake-news-detection/blob/main/writeups/CIS520_Proposal.pdf)
 - [Analysis on CFPB Complaints](https://zycalice.github.io/cfpb-complaints/)
 
+Visit my github repositories for more!
+
