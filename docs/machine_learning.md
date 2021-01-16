@@ -4,6 +4,25 @@ permalink: /machine_learning/
 ---
 
 # Machine Learning
+# General Supervised Learning Process (Supervised if label exists)
+* Model: usually refers to the mathematical structure of by which the prediction 𝑦𝑖 is made from the input 𝑥𝑖.
+   * Parameters (if any) and hyper-parameters: the parameters of the model that needs to be trained/optimized to obtain the best prediction. Can be optimized using MLE or MAP. Some non-parametric models like KNN or Decision Tree does not have parameters, but have hypter-parameters like number of neighbors or tree depth, which is pre-determined can be optimized through cross validation. 
+* Objective function: training loss + regularization
+* Optimization using on testing and validation data
+   * Optimize the model by changing the parameters to achieve the lowest objective function and thus the best prediction
+   * Minimize the objective loss function: closed-form solution, gradient descent
+   * A simple decision tree achieves a similar goal by maximizing information gain
+* Evaluation metrics using on testing data (accuracy, f-score, auc) 
+
+
+# General Unsupervised Learning Process (Unsupervised if label does not exist)
+* Typically the output is a variation of the input
+* Can help to reduce dimensions/perform feature extraction (auto-encoders)
+* Can help to create labels
+
+
+[Source](https://xgboost.readthedocs.io/en/latest/tutorials/model.html)
+
 ## Linear Regression and Logistic Regression
 ### Linear Regression:
 * y = $w^Tx$
@@ -117,11 +136,12 @@ We can also tell from this algorithm that logistic is also a linear model, and i
 * Easy to overfit; need ways to regularize the model
 
 ### Randome Forest
+* An ensemble model
 * Uses bagging (subset of n) and boosting (subset of features) as weak learners
 * Two ways to regularize the model to prevent the tree based model to overfit
 
 ### Gradient Tree Boosting
-
+* 
 
 
 ## Clustering
