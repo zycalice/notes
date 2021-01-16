@@ -8,11 +8,12 @@ permalink: /machine_learning/
 * Model: usually refers to the mathematical structure of by which the prediction 𝑦𝑖 is made from the input 𝑥𝑖.
    * Parameters (if any) and hyper-parameters: the parameters of the model that needs to be trained/optimized to obtain the best prediction. Can be optimized using MLE or MAP. Some non-parametric models like KNN or Decision Tree does not have parameters, but have hypter-parameters like number of neighbors or tree depth, which is pre-determined can be optimized through cross validation. 
 * Objective function: training loss + regularization
-* Optimization using on testing and validation data
+  * regularization typically reduces the "strength" of the weights or parameters to prevent overfitting
+* Optimization using testing and validation data
    * Optimize the model by changing the parameters to achieve the lowest objective function and thus the best prediction
    * Minimize the objective loss function: closed-form solution, gradient descent
    * A simple decision tree achieves a similar goal by maximizing information gain
-* Evaluation metrics using on testing data (accuracy, f-score, auc) 
+* Evaluation metrics using testing data (accuracy, f-score, auc) 
 
 ([reference](https://xgboost.readthedocs.io/en/latest/tutorials/model.html))
 
@@ -129,7 +130,8 @@ We can also tell from this algorithm that logistic is also a linear model, and i
 
 ## Trees
 ### Decision tree: 
-* Splits based on each feature, and select feature order by maximizing information gain (difference in entropy)
+* Each level splits the samples based on each feature, and select feature order by maximizing information gain (difference in entropy)
+* Scales with log(n) for best case, and p for worst case; n = number of samples, p = number of features
 * Assumes a hierchy structure
 * Easy to overfit; need ways to regularize the model
 
