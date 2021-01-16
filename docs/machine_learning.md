@@ -103,6 +103,8 @@ plt.show()
 
 ```
 
+We can also tell from this algorithm that logistic is also a linear model, and it is just applying the sigmoid activation/softmax function on y=Xw to optain a probability distribution for classification purposes. It is considered linear because the prediction or outcome depends on the linear combination of the features.
+
 ## Perceptron and SVM
 ### Perceptron
 ### SVM
