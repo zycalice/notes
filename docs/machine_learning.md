@@ -133,13 +133,18 @@ We can also tell from this algorithm that logistic is also a linear model, and i
   The weight update formula is: W = W' + learning_rate * correctly_predicted_or_not * x
     * learning_rate = 1/2 typically, but the algorithm will converge for 0<learning_rate<largest eigenvalue of the X^TX matrix/largest [singular values of X squared]. Convergence rate is proportional to min(eigenvalues of X^TX)/max(eigenvalues of X^TX).
     * correctly_predicted_or_not is calculated simply by y - sign(w^Tx). The value is 0 when predicted correctly, thus W = W'; the value is 2 (y=1, prediction=-1) or -2 (y=-1, prediction=1), when predicted incorrectly. Setting learning_rate = 1/2 will simply the weight update formula to W = W' + correctly_prediction_or_not * x.
-* Fast but not stable, since computing the gradient using only one data point is fast, but each data point could change the prediction
-* Could use voted perceptron or average perceptron to solve the stability issue
-  * Voted perceptron need to save/memorize all the previous predictions to make a vote
-  * Averaged percetron does not need to save/memorize all the previous predictions
+* Fast but not stable, since computing the gradient using only one data point is fast, but each data point could change the prediction. If it’s possible to separate the data with a hyperplane (i.e. if it’s linearly separable), then the algorithm will converge to that hyperplane. If the data is not separable then perceptron is unstable and bounces around. 
+* Could use voted perceptron or average perceptron to solve some of the stability issue.
+  * Voted perceptron need to save/memorize all the previous predictions to make a vote.
+  * Averaged percetron does not need to save/memorize all the previous predictions. We can also use kernal with this algorithm.
 * Number of mistakes in perceptron algorithm has a upper bound  M = R^2/gamma^2, where R = max||X||_2 (size of the largest X), and gamma (the margin) < y W^{*T}X. Gamma is the margin and >0 if the data is separable.
+* Other variations:
+ * Passive-agressive perceptron model (Margin-Infused Relaxed Algorithm): uses hinge loss. L = 0 if yw^Tx >=1, else 1 - yw^Tx.
+ 
+
 ### SVM
-* Separabale 
+* Separabale case uses 0-inifity loss.
+* Unseparatebl case usese hinge loss.
 
 
 ## Trees
