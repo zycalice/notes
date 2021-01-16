@@ -13,7 +13,8 @@ permalink: /machine_learning/
    * Minimize the objective loss function: closed-form solution, gradient descent
    * A simple decision tree achieves a similar goal by maximizing information gain
 * Evaluation metrics using on testing data (accuracy, f-score, auc) 
-[Source](https://xgboost.readthedocs.io/en/latest/tutorials/model.html)
+
+([reference](https://xgboost.readthedocs.io/en/latest/tutorials/model.html))
 
 ## General Unsupervised Learning Process (Unsupervised if label does not exist)
 * Typically the output is a variation of the input
