@@ -12,6 +12,8 @@ permalink: /machine_learning/
 * Optimization using testing and validation data
    * Optimize the model by changing the parameters to achieve the lowest objective function and thus the best prediction
    * Minimize the objective loss function: closed-form solution, gradient descent
+    * Batch gradient descent: could compute all the training set at ones, could compute subset groups of the data and get the avg gradient to update, but the underlying idea is for one epoch (means all training set considered), only one weight update.
+    * Mini-Batch gradient descent: update weights with a subset of sample (a mini-batch); does not wait until gradient for all data are computed. For one epoch, there are several updates to the weight. When the mini-batch size = 1, this is stochastic gradient descent, which could be unstable.
    * A simple decision tree achieves a similar goal by maximizing information gain
 * Evaluation metrics using testing data (accuracy, f-score, auc) 
 
