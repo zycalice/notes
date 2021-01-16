@@ -125,7 +125,18 @@ We can also tell from this algorithm that logistic is also a linear model, and i
 
 ## Perceptron and SVM
 ### Perceptron
+* Use stochastic gradient descent
+* Prediction is sign(w^Tx), where label y takes value in -1 and 1.
+* For each data, if the prediction is correct (sign(w^Tx) = y), do not update the weights; if the prediction is incorrect (sign(W^Tx)!=y), update the gradient and update the weights
+  * If the prediction is incorrect, each update in weights essentially pulls the weight vector closer to the wrongly predicted data point (vector addition).
+  See more: 
+* Fast but not stable, since computing the gradient using only one data point is fast, but each data point could change the prediction
+* Could use voted perceptron or average perceptron to solve the stability issue
+  * Voted perceptron need to save/memorize all the previous predictions to make a vote
+  * Averaged percetron does not need to save/memorize all the previous predictions
+* Number of mistakes in perceptron algorithm has a upper bound  M = R^2/gamma^2
 ### SVM
+* Separabale 
 
 
 ## Trees
