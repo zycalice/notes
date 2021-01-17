@@ -40,7 +40,8 @@ permalink: /machine_learning/
 * $p(Y | X)$  = sigmoid($w^Tx$) transforms $w^Tx$ to a probability
 * Where the sigmoid is s(x) = $1/(1+e^{-x})$
 * Threshold is typically $p(Y | X)$ less or more than 0.5
-* MLE
+* No regularization: MLE to find the best parameter
+* With regularization: MAP to find the best parameter
 * Loss function: cross entropy loss (this loss does not have closed-form solution, so we need to do gradient descent)
    * can also add regularization
 * In general, we can have multiple predictor variables in a logistic regression model. The cofficients are the log odds of p/(1-p)
