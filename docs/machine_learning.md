@@ -135,7 +135,7 @@ We can also tell from this algorithm that logistic is also a linear model, and i
 * Prediction is sign($w^Tx$), where label y takes value in -1 and 1 accordingly as well.
 * For each data, if the prediction is correct (sign($w^Tx$) = y), do not update the weights; if the prediction is incorrect sign($w^Tx$)!=y, update the gradient and update the weights
     * If the prediction is incorrect, each update in weights essentially pulls the weight vector closer to the wrongly predicted data point (vector addition).
-  The weight update formula is: W = W' + learning_rate * correctly_predicted_or_not * x
+  The weight update formula is: w = w' + learning_rate * correctly_predicted_or_not * x
     * learning_rate = 1/2 typically, but the algorithm will converge for 0<learning_rate<largest eigenvalue of the $X^TX$ matrix/largest [singular values of X squared] if data is linearly separable. Convergence rate is proportional to min(eigenvalues of $X^TX$)/max(eigenvalues of $X^TX$).
     * correctly_predicted_or_not is calculated simply by y - sign($w^Tx$). The value is 0 when predicted correctly, thus w = w'; the value is 2 (y=1, prediction=-1) or -2 (y=-1, prediction=1), when predicted incorrectly. More specifically, push the normal vector in the direction of the mistake if
 it was positively labeled and away if it was negatively labeled. Setting learning_rate = 1/2 will simplify the weight update formula to w = w' + correctly_prediction_or_not * x.
