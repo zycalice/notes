@@ -30,7 +30,7 @@ permalink: /machine_learning/
 * Ordinary least squared assumes y is normally distributed
 * No regularization: MLE to find the best parameter
 * With regularization: MAP to find the best parameter
-* Loss Function: base is mean squared error = mean(|y_pred - y_actual|^2) or regression squared error = sum(|y_pred - y_actual|^2)
+* Loss Function: base is mean squared error = $mean(|y_pred - y_actual|^2)$ or regression squared error = $sum(|y_pred - y_actual|^2)$
     * L2 regularizer: uses (L2 norm of the weights)^2 as regularizer, thus penalizes larger weights
     * L1 regularizer: uses (L1 norm of the weights)^1 as regularizer, thus penalizes larger weights a little bit but also push smaller weights to 0
     * L0 rgularizer: counts of non-zero weights (not convex), thus penalizes smaller weights to 0; no closed form solution, requires searching
@@ -131,12 +131,12 @@ We can also tell from this algorithm that logistic is also a linear model, and i
 ### Perceptron
 * Uses stochastic gradient descent.
 * The only hyper-parameter is the number of iterations.
-* Prediction is sign(w^Tx), where label y takes value in -1 and 1 accordingly as well.
-* For each data, if the prediction is correct (sign(w^Tx) = y), do not update the weights; if the prediction is incorrect (sign(w^Tx)!=y), update the gradient and update the weights
+* Prediction is $sign(w^Tx)$, where label y takes value in -1 and 1 accordingly as well.
+* For each data, if the prediction is correct $(sign(w^Tx) = y)$, do not update the weights; if the prediction is incorrect $sign(w^Tx)!=y$, update the gradient and update the weights
     * If the prediction is incorrect, each update in weights essentially pulls the weight vector closer to the wrongly predicted data point (vector addition).
   The weight update formula is: W = W' + learning_rate * correctly_predicted_or_not * x
-    * learning_rate = 1/2 typically, but the algorithm will converge for 0<learning_rate<largest eigenvalue of the X^TX matrix/largest [singular values of X squared] if data is linearly separable. Convergence rate is proportional to min(eigenvalues of X^TX)/max(eigenvalues of X^TX).
-    * correctly_predicted_or_not is calculated simply by y - sign(w^Tx). The value is 0 when predicted correctly, thus W = W'; the value is 2 (y=1, prediction=-1) or -2 (y=-1, prediction=1), when predicted incorrectly. More specifically, push the normal vector in the direction of the mistake if
+    * learning_rate = 1/2 typically, but the algorithm will converge for 0<learning_rate<largest eigenvalue of the $X^TX$ matrix/largest [singular values of X squared] if data is linearly separable. Convergence rate is proportional to min(eigenvalues of $X^TX$)/max(eigenvalues of $X^TX$).
+    * correctly_predicted_or_not is calculated simply by y - $sign(w^Tx)$. The value is 0 when predicted correctly, thus W = W'; the value is 2 (y=1, prediction=-1) or -2 (y=-1, prediction=1), when predicted incorrectly. More specifically, push the normal vector in the direction of the mistake if
 it was positively labeled and away if it was negatively labeled. Setting learning_rate = 1/2 will simplify the weight update formula to W = W' + correctly_prediction_or_not * x.
 * Fast but not stable, since computing the gradient using only one data point is fast, but each data point could change the prediction. If it’s possible to separate the data with a hyperplane (i.e. if it’s linearly separable), then the algorithm will converge to that hyperplane. If the data is not separable then perceptron is unstable and bounces around. 
 * Could use voted perceptron or average perceptron to solve some of the stability issue.
