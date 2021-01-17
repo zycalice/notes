@@ -39,7 +39,7 @@ permalink: /machine_learning/
 ### Logistic Regression:
 * $p(Y | X)$  = sigmoid($w^Tx$) transforms $w^Tx$ to a probability
 * Where the sigmoid is s(x) = $1/(1+e^{-x})$
-* Threshold is typically $p(Y|X)$ less or more than 0.5
+* Threshold is typically $p(Y | X)$ less or more than 0.5
 * MLE
 * Loss function: cross entropy loss (this loss does not have closed-form solution, so we need to do gradient descent)
    * can also add regularization
