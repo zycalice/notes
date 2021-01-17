@@ -17,7 +17,7 @@ permalink: /machine_learning/
    * A simple decision tree achieves a similar goal by maximizing information gain
 * Evaluation metrics using testing data (accuracy, f-score, AUC) 
 
-([reference](https://xgboost.readthedocs.io/en/latest/tutorials/model.html))
+([source](https://xgboost.readthedocs.io/en/latest/tutorials/model.html))
 
 ## General Unsupervised Learning Process (Unsupervised if label does not exist)
 * Typically the output is a variation of the input
@@ -37,16 +37,19 @@ permalink: /machine_learning/
     * elastic net: L1 + L2 loss
 
 ### Logistic Regression:
-* p(Y \| X)  = sigmoid(w^Tx) transforms w^Tx to a probability
+* p(Y | X)  = sigmoid(w^Tx) transforms w^Tx to a probability
 * The sigmoid activation function is s(x) = 1/(1+e^{-x})
-* Threshold is typically p(Y \| X) less or more than 0.5
+* Threshold is typically p(Y | X) less or more than 0.5
 * No regularization: MLE to find the best parameter
 * With regularization: MAP to find the best parameter
 * Loss function: cross entropy loss (this loss does not have closed-form solution, so we need to do gradient descent)
    * can also add regularization
-* In general, we can have multiple predictor variables in a logistic regression model. The cofficients are the log odds of p/(1-p)
+* In general, we can have multiple predictor variables in a logistic regression model. 
+* logit(p) = log(odds) = log(p/q) = a + bX, where q=1-b for binary classification
+* b = log(odds_p) – log(odds_q)
+* Logistic regression is not great for multi-class classification. Try QDA instead.
 
-I have written a logistic regression algrithm below:
+I have written a logistic regression algorithm below:
 ```
 # define helper functions
 def sigmoid(x):
@@ -172,7 +175,8 @@ it was positively labeled and away if it was negatively labeled. Setting learnin
 * Two ways to regularize the model to prevent the tree based model to overfit
 
 ### Gradient Tree Boosting
-* 
+* Also trains on weak learners first
+* Uses residuals
 
 
 ## Clustering
