@@ -8,7 +8,7 @@ permalink: /machine_learning/
 * Model: usually refers to the mathematical structure of by which the prediction 𝑦𝑖 is made from the input 𝑥𝑖.
    * Parameters (if any) and hyper-parameters: the parameters of the model that needs to be trained/optimized to obtain the best prediction. Can be optimized using MLE or MAP. Some non-parametric models like KNN or Decision Tree does not have parameters, but have hypter-parameters like number of neighbors or tree depth, which is pre-determined can be optimized through cross validation. 
 * Objective function: training loss + regularization
-  * regularization typically reduces the "strength" of the weights or parameters to prevent overfitting
+  * regularization typically reduces the "strength" of the weights or parameters to prevent overfitting by additing an additional term using weights itself in the loss function
 * Optimization using testing and validation data
    * Optimize the model by changing the parameters to achieve the lowest objective function and thus the best prediction
    * Minimize the objective loss function: closed-form solution, gradient descent
