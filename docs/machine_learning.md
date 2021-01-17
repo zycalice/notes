@@ -147,8 +147,7 @@ it was positively labeled and away if it was negatively labeled. Setting learnin
 * Unsolvable issue:
     * Will have A solution, but not necessarily a 'good' separator. The perceptron algorithm is affected by the order the data is processed. There are infinitely many separating planes that can be drawn using this algorithm to separate the data. Therefore, the development of SVM is a better algorithm. 
     
-[source 1](http://web.mit.edu/6.S097/www/resources/L01.pdf)
-[source 2](https://www.seas.upenn.edu/~cis520/lectures/15_online_learning.pdf)
+[source 1](http://web.mit.edu/6.S097/www/resources/L01.pdf) ｜ [source 2](https://www.seas.upenn.edu/~cis520/lectures/15_online_learning.pdf)
  
 
 ### SVM
