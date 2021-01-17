@@ -30,7 +30,7 @@ permalink: /machine_learning/
 * Ordinary least squared assumes y is normally distributed
 * No regularization: MLE to find the best parameter
 * With regularization: MAP to find the best parameter
-* Loss Function: base is mean squared error = $mean(|y_pred - y_actual|^2)$ or regression squared error = $sum(|y_pred - y_actual|^2)$
+* Loss Function: base is mean squared error = mean(|y_pred - y_actual|^2) or regression squared error = sum(|y_pred - y_actual|^2)
     * L2 regularizer: uses (L2 norm of the weights)^2 as regularizer, thus penalizes larger weights
     * L1 regularizer: uses (L1 norm of the weights)^1 as regularizer, thus penalizes larger weights a little bit but also push smaller weights to 0
     * L0 rgularizer: counts of non-zero weights (not convex), thus penalizes smaller weights to 0; no closed form solution, requires searching
