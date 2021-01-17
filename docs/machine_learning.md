@@ -37,9 +37,9 @@ permalink: /machine_learning/
     * elastic net: L1 + L2 loss
 
 ### Logistic Regression:
-* p(Y|X)  = sigmoid($w^Tx$) transforms $w^Tx$ to a probability
+* $p(Y|X)$  = sigmoid($w^Tx$) transforms $w^Tx$ to a probability
 * Where the sigmoid is s(x) = $1/(1+e^{-x})$
-* Threshold is typically p(Y|X) less or more than 0.5
+* Threshold is typically $p(Y|X)$ less or more than 0.5
 * MLE
 * Loss function: cross entropy loss (this loss does not have closed-form solution, so we need to do gradient descent)
    * can also add regularization
@@ -142,9 +142,9 @@ it was positively labeled and away if it was negatively labeled. Setting learnin
 * Could use voted perceptron or average perceptron to solve some of the stability issue.
     * Voted perceptron need to save/memorize all the previous predictions to make a vote.
     * Averaged percetron does not need to save/memorize all the previous predictions. We can also use kernal with this algorithm.
-* Number of mistakes in perceptron algorithm has a upper bound  M = R^2/gamma^2, where R = max||X||_2 (size of the largest X), and gamma (the margin) < y W^{*T}X. Gamma is the margin and >0 if the data is separable.
+* Number of mistakes in perceptron algorithm has a upper bound  M = $R^2/gamma^2$, where R = $max||X||_2$ (size of the largest X), and gamma (the margin) $< y W^{*T}X$. Gamma is the margin and >0 if the data is separable.
 * Other variations:
-    * Passive-agressive perceptron model (Margin-Infused Relaxed Algorithm): uses hinge loss. L = 0 if yw^Tx >=1, else 1 - yw^Tx.
+    * Passive-agressive perceptron model (Margin-Infused Relaxed Algorithm): uses hinge loss. L = 0 if $yw^Tx >=1$, else $1 - yw^Tx$.
 * Unsolvable issue:
     * Will have A solution, but not necessarily a 'good' separator. The perceptron algorithm is affected by the order the data is processed. There are infinitely many separating planes that can be drawn using this algorithm to separate the data. Therefore, the development of SVM is a better algorithm. 
     
