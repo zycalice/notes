@@ -27,8 +27,8 @@ permalink: /machine_learning/
 ## Linear Regression and Logistic Regression
 ### Linear Regression:
 * y = $w^Tx$
-* No regularization: MLE to maximize likelihood function
-* With regularization: MAP to maximize likelihood function
+* No regularization: MLE to find the best parameter
+* With regularization: MAP to find the best parameter
 * Loss Function: base is mean squared error = mean(|y_pred - y_actual|^2) or regression squared error = sum(|y_pred - y_actual|^2)
     * L2 regularizer: uses L2 norm of the weights as regularizer, thus penalizes larger weights
     * L1 regularizer: uses L1 norm of the weights as regularizer, thus penalizes larger weights a little bit but also push smaller weights to 0
