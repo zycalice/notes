@@ -134,7 +134,8 @@ We can also tell from this algorithm that logistic is also a linear model, and i
   * If the prediction is incorrect, each update in weights essentially pulls the weight vector closer to the wrongly predicted data point (vector addition).
   The weight update formula is: W = W' + learning_rate * correctly_predicted_or_not * x
     * learning_rate = 1/2 typically, but the algorithm will converge for 0<learning_rate<largest eigenvalue of the X^TX matrix/largest [singular values of X squared]. Convergence rate is proportional to min(eigenvalues of X^TX)/max(eigenvalues of X^TX).
-    * correctly_predicted_or_not is calculated simply by y - sign(w^Tx). The value is 0 when predicted correctly, thus W = W'; the value is 2 (y=1, prediction=-1) or -2 (y=-1, prediction=1), when predicted incorrectly. Setting learning_rate = 1/2 will simplify the weight update formula to W = W' + correctly_prediction_or_not * x.
+    * correctly_predicted_or_not is calculated simply by y - sign(w^Tx). The value is 0 when predicted correctly, thus W = W'; the value is 2 (y=1, prediction=-1) or -2 (y=-1, prediction=1), when predicted incorrectly. More specifically, push the normal vector in the direction of the mistake if
+it was positively labeled and away if it was negatively labeled. Setting learning_rate = 1/2 will simplify the weight update formula to W = W' + correctly_prediction_or_not * x.
 * Fast but not stable, since computing the gradient using only one data point is fast, but each data point could change the prediction. If it’s possible to separate the data with a hyperplane (i.e. if it’s linearly separable), then the algorithm will converge to that hyperplane. If the data is not separable then perceptron is unstable and bounces around. 
 * Could use voted perceptron or average perceptron to solve some of the stability issue.
   * Voted perceptron need to save/memorize all the previous predictions to make a vote.
