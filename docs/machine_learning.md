@@ -37,9 +37,9 @@ permalink: /machine_learning/
     * elastic net: L1 + L2 loss
 
 ### Logistic Regression:
-* p(Y | X)  = sigmoid(w^Tx) transforms w^Tx to a probability
+* p(Y \| X)  = sigmoid(w^Tx) transforms w^Tx to a probability
 * The sigmoid activation function is s(x) = 1/(1+e^{-x})
-* Threshold is typically p(Y | X) less or more than 0.5
+* Threshold is typically p(Y \| X) less or more than 0.5
 * No regularization: MLE to find the best parameter
 * With regularization: MAP to find the best parameter
 * Loss function: cross entropy loss (this loss does not have closed-form solution, so we need to do gradient descent)
@@ -155,6 +155,7 @@ it was positively labeled and away if it was negatively labeled. Setting learnin
 ### SVM
 * Separable case uses 0-infinity loss.
 * Unseparable case uses hinge loss.
+
 （[source](http://www.cs.cmu.edu/~aarti/Class/10701_Spring14/slides/SupportVectorMachines.pdf)）
 
 
