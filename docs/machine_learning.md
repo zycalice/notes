@@ -143,7 +143,7 @@ it was positively labeled and away if it was negatively labeled. Setting learnin
 * Could use voted perceptron algorithm or average perceptron algorithm to solve some of the stability issue.
     * Voted perceptron algorithm need to save/memorize all the previous predictions to make a vote.
     * Averaged perceptron algorithm does not need to save/memorize all the previous predictions. We can also use kernel with this algorithm.
-* Number of mistakes in perceptron algorithm has a upper bound  M = R^2/gamma^2, where R = max||X||_2 (size of the largest X), and gamma (the margin) < y w^{*T}x. Gamma is the margin and >0 if the data is separable.
+* Number of mistakes in perceptron algorithm has a upper bound  M = R^2/gamma^2, where R = max||X||_2 (size of the largest X), and gamma (the margin) < y w*^Tx, where the star means optimal w. Gamma is the margin and >0 if the data is separable.
 * Other variations:
     * Passive-aggressive perceptron model (Margin-Infused Relaxed Algorithm): uses hinge loss. L = 0 if yw^Tx >=1, else 1 - yw^Tx.
 * Unsolvable issue:
