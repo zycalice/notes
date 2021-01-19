@@ -47,7 +47,7 @@ permalink: /machine_learning/
 * In general, we can have multiple predictor variables in a logistic regression model. 
 * logit(p) = log(odds) = log(p/q) = a + bX, where q=1-b for binary classification
 * b = log(odds_p) – log(odds_q)
-* Logistic regression is not great for multi-class classification. Try QDA instead.
+* Logistic regression is not great for multi-class classification. Try LDA/QDA instead.
 
 I have written a logistic regression algorithm below:
 ```
@@ -129,7 +129,8 @@ plt.show()
 ```
 In the above algorithm, number of iterations is pre-defined. One could also set an error threshold to determine when the weight updates should stop.
 
-We can also tell from this algorithm that logistic is also a linear model, and it is just applying the sigmoid activation/softmax function on y=Xw to optain a probability distribution for classification purposes. It is considered linear because the prediction or outcome depends on the linear combination of the features.
+We can tell from this algorithm that logistic regression is also a linear model, and it is just applying the sigmoid activation/softmax function on y=Xw to obtain a probability distribution for classification purposes. 
+It is considered linear because the prediction or outcome depends on the linear combination of the features.
 
 ## Perceptron and SVM
 ### Perceptron
@@ -148,35 +149,146 @@ it was positively labeled and away if it was negatively labeled. Setting learnin
     * Averaged perceptron algorithm does not need to save/memorize all the previous predictions. We can also use kernel with this algorithm.
 * Number of mistakes in perceptron algorithm has a upper bound  M = R^2/gamma^2, where R = max||X||_2 (size of the largest X), and gamma (the margin) < y w*^Tx, where the star means optimal w. Gamma is the margin and >0 if the data is separable.
 * Other variations:
-    * Passive-aggressive perceptron model (Margin-Infused Relaxed Algorithm): uses hinge loss. L = 0 if yw^Tx >=1, else 1 - yw^Tx.
+    * Passive-aggressive perceptron model (Margin-Infused Relaxed Algorithm): uses hinge loss. L = 0 if yw^Tx >=1, else 1 - yw^Tx. Multi-class.
 * Unsolvable issue:
-    * Will have A solution, but not necessarily a 'good' separator. The perceptron algorithm is affected by the order the data is processed. There are infinitely many separating planes that can be drawn using this algorithm to separate the data. Therefore, the development of SVM is a better algorithm. 
-    
-（[source 1](http://web.mit.edu/6.S097/www/resources/L01.pdf) ｜ [source 2](https://www.seas.upenn.edu/~cis520/lectures/15_online_learning.pdf)）
+    * Will have A solution, but not necessarily a 'good' separator. The perceptron algorithm is affected by the order the data is processed. There are infinitely many separating planes that can be drawn using this algorithm to separate the data. Therefore, the development of SVM is a better algorithm.
+
+([source 1](http://web.mit.edu/6.S097/www/resources/L01.pdf))
+([source 2](https://www.seas.upenn.edu/~cis520/lectures/15_online_learning.pdf))
  
 
 ### SVM
-* Separable case uses 0-infinity loss.
+* Pick the best linear classifier with the largest margin (solves the perceptron problem)
+* Separable case 
+    * Choose w^Tx + b = +-1 for the positive and negative margins
+    * The margin is 2/||w||
+    * Cost function is to 1) maximize margin 2/||w|| subject to w^Tx + b >=1 if y=1 and w^Tx + b <=-1 if y=-1, 
+      or 2) minimize ||w||^2 subject to y(w^Tx+b)>=1 for i = 1...N
+    * This is a quadratic optimization problem subject to linear constraints and there is a unique minimum
+    * Can just use hard margin SVM.
+    * Uses 0-infinity loss.
+    * Scale invariant.
 * Unseparable case uses hinge loss.
+    * Use soft margin SVM.
+    * Uses hinge loss to approximate 0-1 loss. (Initially, soft margin version is 0-1 loss, but the problem is that it is not convex.)
+    * Slack variable_i is max(1-y(w_i^Tx_i),0).
+    * w*_soft = argmin C*sum(max(1-y(w_i^Tx_i),0)) + 1/2 ||w||^2
+        * the first part of the loss function is the hinge loss, and the second part is the l2 regularizer (=w^Tw)
+        * C in the first part is a regularization parameter: 
+            * small C allows constraints to be easily ignored → large margin
+            * large C makes constraints hard to ignore → narrow margin
+            * when C is infinity, forces slack variable to be zero, thus enforces all constraints → hard margin
+    * This is still a quadratic optimization problem and there is a unique minimum. Can be solved using gradient descent.
+* SVM can be expressed as a sum over the support vectors. Only the support vectors are affecting the decision boundary/surface.
+  
 
 （[source](http://www.cs.cmu.edu/~aarti/Class/10701_Spring14/slides/SupportVectorMachines.pdf)）
+([source](https://www.robots.ox.ac.uk/~az/lectures/ml/lect2.pdf))
 
 
 ## Trees
+* Can help with feature importance and feature selection.
+* Assumes hierarchy structure in the features.
+
 ### Decision tree: 
-* Each level splits the samples based on each feature, and select feature order by maximizing information gain (difference in entropy)
+* Each level splits the samples based on each feature, and select feature order by maximizing information gain/mutual information (=difference in entropy and conditional entropy: H(Y) - H(Y|X))
+  * Other ways to access split quality includes Gini impurity
+* Uses information gain, so do not really have a loss function. The misclassification rate (loss function) is not sensible in this case, because different types of splits,
+can produce the same misclassification rate, although one split is better than the other. See example in the source.
 * Scales with log(n) for best case, and p for worst case; n = number of samples, p = number of features
-* Assumes a hierarchy structure
-* Easy to overfit; need ways to regularize the model
+* Easy to overfit; need ways to regularize the model (early stopping and pruning)
+    * Early Stopping criteria:
+        * Limited depth: don’t split if the node is beyond some fixed depth depth in the tree
+        * Node purity: don’t split if the proportion of training points in some class is sufficiently high
+        * Information gain criteria: don’t split if the gained information/purity is sufficiently close to zero
+    * Pruning: prune a fully-grown tree by re-combining splits if doing so reduces validation error
+  
+  
+（[source](https://www.eecs189.org/static/notes/n25.pdf))
 
 ### Random Forest
-* An ensemble model
-* Uses bagging (subset of n) and boosting (subset of features) as weak learners
-* Two ways to regularize the model to prevent the tree based model to overfit
+* An ensemble model. Random Forests grows many classification trees. To classify a new object from an input vector, put the input vector down each of the trees in the forest. 
+  Each tree gives a classification, and we say the tree "votes" for that class. The forest chooses the classification having the most votes (over all the trees in the forest).
+* Uses bagging (subset of sample size, usually 2/3 of the data, with replacement) and feature randomization (subset of features, usually sqrt(M), with replacement) as weak learners; 
+  Two ways to regularize the model to prevent the tree based model to overfit
+* Usually k = 1,000 trees
+* Both the size of the random subsample of training points and the number of features at each split are hyperparameters which should be tuned through cross-validation.
+* Out-of-bag (oob) data: When the training set for the current tree is drawn by sampling with replacement, about one-third of the cases are left out of the sample.
+  This oob (out-of-bag) data is used to get a running unbiased estimate of the classification error as trees are added to the forest. 
+  It is also used to get estimates of variable importance.
+* Proximities: After each tree is built, all of the data are run down the tree, and proximities are computed for each pair of cases. If two cases occupy the same terminal node, 
+  their proximity is increased by one. At the end of the run, the proximities are normalized by dividing by the number of trees. 
+  Proximities are used in replacing missing data, locating outliers, and producing illuminating low-dimensional views of the data.
 
-### Gradient Tree Boosting
-* Also trains on weak learners first
-* Uses residuals
+Each tree is grown as follows:
+* If the number of cases in the training set is N, sample N cases at random - but **with replacement**, from the original data. This sample will be the training set for growing the tree.
+* If there are M input variables, a number m<<M is specified such that at each node, m variables are selected at random out of the M and the best split on these m is used to split the node. 
+  The value of m is held constant during the forest growing.
+* Each tree is grown to the largest extent possible. There is no pruning.
+
+In the original paper on random forests, it was shown that the forest error rate depends on two things: correlation between trees, and strength of individual trees.
+* The **correlation** between any two trees in the forest. Increasing the correlation increases the forest error rate.
+* The **strength** of each individual tree in the forest. A tree with a low error rate is a strong classifier. Increasing the strength of the individual trees decreases the forest error rate.
+* Reducing m reduces both the correlation and the strength. Increasing it increases both. Somewhere in between is an "optimal" range of m - usually quite wide. 
+Using the oob error rate (see below) a value of m in the range can quickly be found. This is the only adjustable parameter to which random forests is somewhat sensitive.
+
+Features and Remarks of Random Forests
+* It is unexcelled in accuracy among current algorithms.
+* It runs efficiently on large data bases.
+* It can handle thousands of input variables without variable deletion.
+* It gives estimates of what variables are important in the classification.
+* It generates an internal unbiased estimate of the generalization error as the forest building progresses.
+* It has an effective method for estimating missing data and maintains accuracy when a large proportion of the data are missing.
+* It has methods for balancing error in class population unbalanced data sets.
+* Generated forests can be saved for future use on other data.
+* Prototypes are computed that give information about the relation between the variables and the classification.
+* It computes proximities between pairs of cases that can be used in clustering, locating outliers, or (by scaling) give interesting views of the data.
+* The capabilities of the above can be extended to unlabeled data, leading to unsupervised clustering, data views and outlier detection.
+* It offers an experimental method for detecting variable interactions.
+* Random forests does not overfit. You can run as many trees as you want. It is fast. Running on a data set with 50,000 cases and 100 variables, 
+  it produced 100 trees in 11 minutes on a 800Mhz machine. For large data sets the major memory requirement is the storage of the data itself, 
+  and three integer arrays with the same dimensions as the data. If proximities are calculated, storage requirements grow as the number of cases 
+  times the number of trees.
+  
+Variable Importance using Random Forest:
+* In every tree in the forest, apply the tree classification to the oob/validation data and count, and then count the number of correct predictions (A).
+* Permute the values of the variable m in the oob/validation data and then apply every tree again. Count the number of correct predictions (B).
+* Avg(A-B) across every tree is the raw score for feature importance.
+
+([source](https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm))
+
+### Boosting:
+Random forests treat each member of the forest equally, taking a plurality vote or an average over their outputs.
+Boosting aims to combine the models (typically called weak learners in this context) in a more
+principled manner. 
+
+**The key idea is as follows: to improve our combined model, we should focus
+on finding learners that correctly predict the points which the overall boosted model is currently
+predicting inaccurately.** Boosting algorithms implement this idea by associating a weight with each
+training point and iteratively reweighting so that mispredicted points have relatively high weights.
+Intuitively, some points are “harder” to predict than others, so the algorithm should focus its efforts
+on those.
+
+#### Gradient Boosting: Adaboost
+* A method for binary classification
+* Weight each data differently based on predicted correctly or not. If predicted correctly, less weights; If predicted incorrectly, more weights.
+    * How do we train a classifier if we want to weight different samples differently? One common way to do this is to resample from the original training set 
+      every iteration to create a new training set that is fed to the next classifier. Specifically, we create a training set of size n by sampling n values from the original 
+      training data with replacement, according to the distribution wi. (This is why we might renormalize the weights in step (d).) This
+      way, data points with large values of wi are more likely to be included in this training set, and the
+      next classifier will place higher priority on such data points.
+* Compute weighted error (should be at most 0.5, otherwise model is even worse than random guessing).
+* Re-weight the training points: if classified correctly, will decrease weight; otherwise, will increase weight. See formula in the source below.
+* Uses exponential loss: L(y, y_hat) = e^{-y*y_hat}
+
+#### Gradient Boosting: General
+* AdaBoost assumes a particular loss function, the exponential loss function. Gradient boosting is a more general technique that allows an arbitrary differentiable loss function L(y, yˆ).
+* The weak learner G could be a regressor in addition to classifier
+* Matching pursuit (also applies to Adaboost): This means the algorithm will follow the residual; our overall predictor is an additive combination of pieces which are selected one-by-one in a greedy fashion. 
+  The algorithm keeps track of residual prediction errors, chooses the “direction” to move based on these, and then performs a sort of line search to determine how far along that direction to move
+
+([source](https://www.eecs189.org/static/notes/n26.pdf))
+([source](https://alliance.seas.upenn.edu/~cis520/dynamic/2020/wiki/index.php?n=Lectures.Boosting))
 
 
 ## Clustering
@@ -196,3 +308,6 @@ it was positively labeled and away if it was negatively labeled. Setting learnin
 ### Both uses an **EM algorithm**
 
 ([source](https://www.eecs189.org/static/notes/n19.pdf))
+
+
+### Class Imbalance
