@@ -354,3 +354,7 @@ which was not possible with K-means.
 ([source](https://www.eecs189.org/static/notes/n19.pdf))
 
 ### Class Imbalance
+1. Use alternative evaluations: use f-score
+2. Sampling the data (oversampling the small class, and undersampling the large class)
+3. Use tree based models
+
