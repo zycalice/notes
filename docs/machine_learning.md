@@ -24,6 +24,15 @@ permalink: /machine_learning/
 * Can help to reduce dimensions/perform feature extraction (auto-encoders)
 * Can help to create labels
 
+
+## Generative vs. Discriminative (Typically applicable for classifiers)
+* Generative: Form a probability distribution p(X, Y) over the input X (which we treat as a random vector) and label Y (which we treat as a random variable), 
+  and we classify an arbitrary datapoint x with the class label that maximizes the joint probability.
+    * p(X,Y) is learned from p(Y) and p(X|Y_k) for each class k. 
+    * Uses Bayes' rule to learn p(Y|X) = p(X|Y) * p(Y)/P(X). P(Y) is the prior probability.
+    * Flexible, quick to learn, and can generate new samples
+* Discriminative: learn p(Y|X) directly.
+
 ## Linear Regression and Logistic Regression
 ### Linear Regression:
 * y = w^Tx
@@ -37,9 +46,9 @@ permalink: /machine_learning/
     * elastic net: L1 + L2 loss
 
 ### Logistic Regression:
-* p(Y | X)  = sigmoid(w^Tx) transforms w^Tx to a probability
+* p(Y|X)  = sigmoid(w^Tx) transforms w^Tx to a probability
 * The sigmoid activation function is s(x) = 1/(1+e^{-x})
-* Threshold is typically p(Y | X) less or more than 0.5
+* Threshold is typically p(Y|X) less or more than 0.5
 * No regularization: MLE to find the best parameter
 * With regularization: MAP to find the best parameter
 * Loss function: cross entropy loss (this loss does not have closed-form solution, so we need to do gradient descent)
@@ -131,6 +140,14 @@ In the above algorithm, number of iterations is pre-defined. One could also set 
 
 We can tell from this algorithm that logistic regression is also a linear model, and it is just applying the sigmoid activation/softmax function on y=Xw to obtain a probability distribution for classification purposes. 
 It is considered linear because the prediction or outcome depends on the linear combination of the features.
+
+## LDA and QDA
+* Estimate p(Y|X) indirectly using the Bayes Rule: p(Y|X) = p(X,Y)/p(X) = p(X|Y) * p(Y)/p(X).
+* Do not require the features to be independent. (Naive Bayes assumes features are independent: given Y, X(1), X(2)...X(d) are independent.)
+* LDA assumes p(X=x|Y=k) = k ~ N(mu_k, Sigma); Normal distribution's parameters mu_k and sigma are estimated from training data
+    * LDA has k*p + p(p+1)/2 parameters
+* QDA assumes p(X=x|Y=k) = k ~ N(mu_k, Sigma_k); Normal distribution's parameters mu_k and sigma_k are estimated from training data
+    * LDA has k*p + kp(p+1)/2 parameters
 
 ## Perceptron and SVM
 ### Perceptron
@@ -292,22 +309,48 @@ on those.
 
 
 ## Clustering
+* Properties of a good cluster: high inter-similarity; low intra-similarity
+
 ### K-means: an iterative process to assign data points to k number of groups based on distance to the center of the groups. Different initiation could lead to different results.
 * Assumes cluster weights are equal $\pi_k = 1/k$
 * Assumes the covariance matrix are all $ \Sigma_k = \sigma*I $ for all clusters, which means each cluster has the same spherical structure
 * There is no likelihood attached to K-means, which makes it harder to understand what assumptions we are making on the data.
 * Each feature is treated equally, so the clusters produced by K-means will look spherical. We can also infer this by looking at the sum of squares in the objective function, which we have seen to be related to spherical Gaussians.
-* Each cluster assignment in the optimization is a hard assignment - each point belongs in exactly one cluster. A soft assignment would assign each point to a distribution over the clusters, which can encode not only which cluster a point belongs to, but also how far it was from the other clusters.
+* Each cluster assignment in the optimization is a hard assignment - each point belongs in exactly one cluster. A soft assignment would assign each point to a distribution over the clusters, 
+  which can encode not only which cluster a point belongs to, but also how far it was from the other clusters.
 
-### Gaussian Mixture model: also an iterative process to cluster, but a "soft" version of k-means. A soft assignment would assign each point to a distribution over the clusters, which can encode not only which cluster a point belongs to, but also how far it was from the other clusters.
-* Assumes cluster weights are equal $\pi_k = 1/k$
-* Assumes the covariance matrix are all $ \Sigma_k = \sigma*I $ for all clusters, which means each cluster has the same spherical structure
-* The only difference from K-means is that the assignments to cluster are soft (probabilistic), while K-means assignment is hard.
-
-
+### Soft K-means
+* A soft assignment would assign each point to a distribution over the clusters, which can encode not only which cluster a point belongs to, but also how far it was from the other clusters.
+* z= -β||x-c_k||^2. β is a tunable parameter indicating the level of “softness” desired
+* This is now a weighted average of the xi - the weights reflect how much we believe each data point belongs to a particular cluster, and because we are using this information, our algorithm should not
+  jump around between clusters, resulting in better convergence speed.
+* Assumes the covariance matrix are all $ \Sigma_k = \sigma*I $ for all clusters, which means each cluster has the same spherical structure.
+  
+### Gaussian Mixture model
+* Allow covariance matrix and mean of the clusters to be arbitrary
+* Draw a value z from some distribution on the set of indices {1,...,K}. Draw a points X from Gaussian distribution N(mu_z, Sigma_z). mu and Sigma are different for each z.
+* An example of latent variable model.
+* If we have fit a MoG model to data (ie. we have determined values for µk, Σk, and the prior on z), then to perform clustering, we can use Bayes’ rule to determine the posterior P(z = k|x) and
+assign x to the cluster k that maximizes this quantity. In fact, this is exactly our decision rule with QDA using a prior - the difference is that QDA, a supervised method, is given labels to fit the
+mixture model, while in the unsupervised clustering setting we must fit the mixture model without the aid of labels. When Σk are not multiples of the identity, we can obtain non-spherical clusters,
+which was not possible with K-means.
+* Log likelihood contains both p(zi|xi;θ) and p(zi=k;theta)
+    * When we perform QDA, we know the zi are known, deterministic quantities and thus the likelihood is simplified to Log likelihood  = sum(log(p(xi|zi;theta)))
+    * Maximizing this is equivalent to fitting the individual class-conditional Gaussians via maximum likelihood, which is consistent with how we have described QDA in the past. 
+    
 ### Both uses an **EM algorithm**
-
+* Used to compute the MLE for latent variable models.
+* Can also be used to impute missing data.
+* EM for K-means:
+    * Expectation (soft imputation): For each data point, compute a soft assignment ri(k) to the clusters - that is, a probability distribution over clusters. The soft assignment is obtained by using a softmax.
+    * Maximization (parameter estimation): Update the centroids in an optimal way given the soft assignments computed in the first step. The resulting updates are a weighted average of the data points.
+* EM for Gaussian Mixtures:
+    * Expectation: Using the current parameter estimates, estimate p(zi|xi;θ). That is, perform soft imputation of the latent cluster variable.
+    * Maximization: Estimate the parameters via MLE, using the estimates of p(zi|xi;θ) to make the computation tractable.
+* EM for missing data:
+    * Expectation: Soft imputation of the data - fill in the missing data (“impute”) with a probability distribution over all its possible values (“soft”).
+    * Maximization: Parameter updates given the imputed data.
+    
 ([source](https://www.eecs189.org/static/notes/n19.pdf))
-
 
 ### Class Imbalance
