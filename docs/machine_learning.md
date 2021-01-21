@@ -36,7 +36,7 @@ permalink: /machine_learning/
 ## Linear Regression and Logistic Regression
 ### Linear Regression:
 * y = w^Tx
-* Ordinary least squared assumes y is normally distributed
+* Four assumptions, see statistics section
 * No regularization: MLE to find the best parameter
 * With regularization: MAP to find the best parameter
 * Loss Function: base is mean squared error = mean(|y_pred - y_actual|^2) or regression squared error = sum(|y_pred - y_actual|^2)
