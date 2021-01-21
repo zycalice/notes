@@ -199,7 +199,7 @@ it was positively labeled and away if it was negatively labeled. Setting learnin
 * SVM can be expressed as a sum over the support vectors. Only the support vectors are affecting the decision boundary/surface.
   
 
-（[source](http://www.cs.cmu.edu/~aarti/Class/10701_Spring14/slides/SupportVectorMachines.pdf)）
+([source](http://www.cs.cmu.edu/~aarti/Class/10701_Spring14/slides/SupportVectorMachines.pdf))
 ([source](https://www.robots.ox.ac.uk/~az/lectures/ml/lect2.pdf))
 
 
