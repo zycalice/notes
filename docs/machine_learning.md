@@ -353,8 +353,62 @@ which was not possible with K-means.
     
 ([source](https://www.eecs189.org/static/notes/n19.pdf))
 
-### Class Imbalance
+## Class Imbalance Problem
 1. Use alternative evaluations: use f-score
 2. Sampling the data (oversampling the small class, and undersampling the large class)
 3. Use tree based models
 
+## Bayes Belief Net
+([source](http://www.cs.cmu.edu/~mgormley/courses/10601bd-f18/slides/lecture21-bayesnet.pdf))
+
+## Hidden Markov Model, RNN
+### HMM
+* Assumes Markov Property, and assumes independent assumption
+    * Estimate transition matrix and emission matrix
+    * History is forgotten with an exponential decay
+  
+### RNN
+* input x, goes through hidden state s, output an observation (could be the probability of the next word)
+* Softmax s(z) transforms the K-dimensional real valued output z to a distribution o
+
+([source](https://www.seas.upenn.edu/~cis520/lectures/28_recurrent_networks.pdf))
+
+## Neural Networks
+* Input layers (number of neurons = number of features), hidden layers, and output layers
+* If no activation functions, then it is basically a linear function
+
+### Gradient Vanishing and Explosion in NN/RNN
+* Due to long backpropagation process, the gradient could get smaller and smaller, or larger and larger in the chain rule process.
+    * The forward pass has nonlinear activation functions which squash the activations, preventing them from blowing up.
+    * The backward pass is linear, so it’s hard to keep things stable. There’s a thin line between exploding and vanishing.
+* Solution includes:
+    * Gradient clipping: we prevent gradients from blowing up by rescaling them so that their norm is at most a particular value η
+    * Input reversal (application: RNN for machine translation)
+    * Identity Initialization of the weight matrix with ReLU as activation functions
+        * Negative activations are clipped to zero, and for the positive activations, units simply retain their value in absence of inputs
+    * Long-Term Short Term Memory: a type of gated recurrent neural network - input gate, output gate, forget gate
+        * Replace each single unit in an RNN by a memory block
+  
+([source](http://www.cs.toronto.edu/~rgrosse/courses/csc321_2017/readings/L15%20Exploding%20and%20Vanishing%20Gradients.pdf))
+  
+### Overfitting in NN
+* Neural networks are easy to overfit
+* Solutions includes:
+    * Adding L2 regularization to the cost function
+    * Add dropouts:  during training, we will randomly “drop” with some probability (1 − p) a subset of neurons during each forward/backward pass (or equivalently, 
+      we will keep alive each neuron with a probability p). One intuitive reason why this technique should be so effective is that what dropout is doing is
+      essentially doing is training exponentially many smaller networks at once and averaging over their predictions.
+      
+### Activation Functions in NN
+* Sigmoid
+* Tanh: The tanh function is an alternative to the sigmoid function that is often found to converge faster in practice. The primary difference between tanh and sigmoid is that tanh output ranges from −1 to
+1 while the sigmoid ranges from 0 to 1.
+* Hard tanh: The hard tanh function is sometimes preferred over the tanh function since it is computationally cheaper. It does however
+saturate for magnitudes of z greater than 1.
+* ReLU: The ReLU (Rectified Linear Unit) function is a popular choice of activation since it does not saturate even for larger values of z and
+has found much success in computer vision applications
+* Leaky ReLU: Traditional ReLU units by design do not propagate any error for non-positive z – the leaky ReLU modifies this such
+that a small error is allowed to propagate backwards even when z is negative
+
+
+([source](http://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes03-neuralnets.pdf))
