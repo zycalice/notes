@@ -394,6 +394,9 @@ which was not possible with K-means.
 * Input layers (number of neurons = number of features), hidden layers, and output layers
 * If no activation functions, then it is basically a linear function
 
+## Multi-class Neural Networks Classification
+([source](https://developers.google.com/machine-learning/crash-course/multi-class-neural-networks/video-lecture))
+
 ### Gradient Vanishing and Explosion in NN/RNN
 * Due to long backpropagation process, the gradient could get smaller and smaller, or larger and larger in the chain rule process.
     * The forward pass has nonlinear activation functions which squash the activations, preventing them from blowing up.
