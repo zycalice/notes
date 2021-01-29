@@ -202,6 +202,23 @@ it was positively labeled and away if it was negatively labeled. Setting learnin
 ([source](http://www.cs.cmu.edu/~aarti/Class/10701_Spring14/slides/SupportVectorMachines.pdf))
 ([source](https://www.robots.ox.ac.uk/~az/lectures/ml/lect2.pdf))
 
+### Logistic Regression vs SVM
+* Logistic regression focuses on maximizing the probability of the data. The farther the data lies from the separating hyperplane 
+(on the correct side), the happier LR is.
+
+* An SVM tries to find the separating hyperplane that maximizes the distance of the closest points to the margin (the support vectors). 
+  If a point is not a support vector, it doesn’t really matter. 
+  
+* We could derive SVM by playing around with the likelihood ratio p(y=1|x)/p(y=0|x)
+
+* Differ only that one uses logistic loss (cross entropy loss) and the other uses 1-infinity for the separable case and hinge loss for 
+unseparable case.
+  
+* Logistic regression is more sensitive to outliers.
+
+([source](http://www.cs.toronto.edu/~kswersky/wp-content/uploads/svm_vs_lr.pdf))
+([source](https://gdcoder.com/support-vector-machine-vs-logistic-regression/))
+
 
 ## Trees
 * Can help with feature importance and feature selection.
