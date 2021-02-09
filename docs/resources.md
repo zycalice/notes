@@ -132,4 +132,5 @@ permalink: /resources/
 
 ## Other Blog posts
 - Autoencoder: [https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798#28b1](https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798#28b1)
-
+- Cosine Similarity vs Euclidean Distance: [https://cmry.github.io/notes/euclidean-v-cosine](https://cmry.github.io/notes/euclidean-v-cosine)
+- Naive Bayes: [https://towardsdatascience.com/all-about-naive-bayes-8e13cef044cf](https://towardsdatascience.com/all-about-naive-bayes-8e13cef044cf)

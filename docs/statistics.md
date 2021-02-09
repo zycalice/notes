@@ -4,6 +4,9 @@ permalink: /statistics/
 ---
 
 # Statistics
+## A great resource for review:
+[http://onlinestatbook.com/2/introduction/introduction.html](http://onlinestatbook.com/2/introduction/introduction.html)
+
 ## Central Limit Theorem:
 * If sample size is large enough, the sample means tends to follow normal 
   distribution.
