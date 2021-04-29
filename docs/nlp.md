@@ -171,3 +171,4 @@ The Transformer allows for significantly more parallelization and can reach a ne
 ([source](http://web.stanford.edu/class/cs224n/slides/cs224n-2020-lecture10-QA.pdf))
 
 
+

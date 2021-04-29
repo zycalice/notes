@@ -127,6 +127,8 @@ permalink: /resources/
 - Pytorch Access Weights: [https://discuss.pytorch.org/t/access-weights-of-a-specific-module-in-nn-sequential/3627](https://discuss.pytorch.org/t/access-weights-of-a-specific-module-in-nn-sequential/3627)
 - Pytorch Latent Space: [https://discuss.pytorch.org/t/plotting-the-latent-space/88431](https://discuss.pytorch.org/t/plotting-the-latent-space/88431)
 
+## Transformers
+- Implementation of paper "Attention is All You Need: [http://nlp.seas.harvard.edu/2018/04/03/attention.html](http://nlp.seas.harvard.edu/2018/04/03/attention.html#positional-encoding)
 ## Datasets
 - Lionbridge: [https://lionbridge.ai/datasets/](https://lionbridge.ai/datasets/)
 
