@@ -31,6 +31,8 @@ September 2015 – December 2015
 ## Professional and Research Experience
 
 ### Claudis Legal Intelligence, NLP Intern (Part time)
+Remote\
+August 2021 - Present
 * Build Natural Language Processing models for legal applications
 
 ### University of Pennsylvania, School of Engineering and Applied Sciences, Research Assistant
