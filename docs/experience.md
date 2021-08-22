@@ -29,10 +29,20 @@ September 2015 – December 2015
 
 * * *
 ## Professional and Research Experience
+
+### Claudis Legal Intelligence, NLP Intern (Part time)
+* Build Natural Language Processing models for legal applications
+
 ### University of Pennsylvania, School of Engineering and Applied Sciences, Research Assistant
 Remmote\
-Jan 2021 - Present
+January 2021 - Present
 * Explore classifer bias for protected classes ([World Well-Being Project](https://www.wwbp.org/))
+
+### Momentive.ai (formerly SurveyMonkey), Data Science Intern, Machine Learning – Product Data Science Team
+San Mateo Office, Remote\
+June 2021 - August 2021
+* Performed research and detected gibberish/irrelevant responses to open-ended questions using Sentence BERT, linguistics rules, and outlier detection methods; Improved f-score by 0.60; Conducted error analysis; Built demo app through Streamlit
+* Hackathons: 1) Multilingual hate speech detection and 2) Bias in ML through adversarial model and sentence debiasing
 
 ### Advanced Continuing Education Association, Data Science Intern 
 Boston, MA/Remote\
