@@ -2,10 +2,8 @@
 title: natural language processing
 permalink: /nlp/
 ---
-# Natural Language Processing (Statistical Learning)
-# Bag of Words and Naive Bayes
 
-# Natural Language Processing (Deep Learning)
+# Natural Language Processing
 ## Word Vectors
 ### 1. One Hot Encoders
 The simplest form of word vectors; but it is not feasible to find any similarity between the vectors.
