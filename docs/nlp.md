@@ -107,8 +107,10 @@ LDA assumes the following generative process for each document w in a corpus D:
 ([source](https://www.seas.upenn.edu/~cis520/lectures/25a_LDA.pdf))
 
 ## RNN
+https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#training-the-model
+
 ### Deep Bidirectional RNNs
-It is possible to make predictions based on future words by having the RNN model read through the corpus backwards.
+Stacked and bidirectional.
 
 ### Gated Recurrent Unit
 * Gated recurrent units are designed in a manner to have more persistent memory thereby making it easier for RNNs to capture long-term dependencies.
