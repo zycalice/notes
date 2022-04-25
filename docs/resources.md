@@ -3,7 +3,7 @@ title: resources
 permalink: /resources/
 ---
 
-# Resources
+# Resources (Mostly course resources)
 [<< Back to my website](https://zycalice.github.io/)
 
 ## Efficient Algorithm
@@ -37,15 +37,7 @@ permalink: /resources/
 
 ## Linear Regression and Logistic Regression
 - Pearson and Spearman Correlation Comparison: [https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/](https://support.minitab.com/en-us/minitab-express/1/help-and-how-to/modeling-statistics/regression/supporting-topics/basics/a-comparison-of-the-pearson-and-spearman-correlation-methods/)
-- Logistic regression: [https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/#:~:text=In%20general%2C%20we%20can%20have,in%20a%20logistic%20regression%20model.&text=Each%20exponentiated%20coefficient%20is%20the,other%20variables%20at%20certain%20value.](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/#:~:text=In%20general%2C%20we%20can%20have,in%20a%20logistic%20regression%20model.&text=Each%20exponentiated%20coefficient%20is%20the,other%20variables%20at%20certain%20value.)
-
-
-## Trees:
-- GTech: [https://mdav.ece.gatech.edu/ece-6254-spring2017/notes/22-decision-trees.pdf](https://mdav.ece.gatech.edu/ece-6254-spring2017/notes/22-decision-trees.pdf)
-
-## Gradient Descent
-- UBC: [https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf](https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf)
-- Berkeley: [https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c03_p47-84.pdf](https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c03_p47-84.pdf)
+- Logistic regression: [https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/)
 
 ## Kernel
 - Berkeley: [https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c02_p25-46.pdf](https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c02_p25-46.pdf)
@@ -61,20 +53,46 @@ permalink: /resources/
 - Toronto: [http://www.cs.toronto.edu/~mbrubake/teaching/C11/Handouts/SupportVectorMachines.pdf](http://www.cs.toronto.edu/~mbrubake/teaching/C11/Handouts/SupportVectorMachines.pdf)
 - Cornell: [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote09.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote09.html)
 
-## Principal Component Analysis
+## Principal Component Analysis and Autoencoders
 - Covariance Matrix Definition: [https://www.itl.nist.gov/div898/handbook/pmc/section5/pmc541.htm](https://www.itl.nist.gov/div898/handbook/pmc/section5/pmc541.htm)
 - SVD: [http://web.mit.edu/course/other/be.400/OldFiles/www/SVD/Singular_Value_Decomposition.htm](http://web.mit.edu/course/other/be.400/OldFiles/www/SVD/Singular_Value_Decomposition.htm)
 - PCA derivation: [https://www.eecs189.org/static/notes/n10.pdf](https://www.eecs189.org/static/notes/n10.pdf)
-
-## Autoencoders
 - DeepLearningBook: [https://www.deeplearningbook.org/contents/autoencoders.html](https://www.deeplearningbook.org/contents/autoencoders.html)
 - VAE: [https://arxiv.org/pdf/1606.05908.pdf](https://arxiv.org/pdf/1606.05908.pdf)
 - Autoencoder using label information: [https://jmlr.csail.mit.edu/papers/volume13/snoek12a/snoek12a.pdf](https://jmlr.csail.mit.edu/papers/volume13/snoek12a/snoek12a.pdf)
+
+## Optimization
+- Lagrangian Duality: [https://www-cs.stanford.edu/people/davidknowles/lagrangian_duality.pdf](https://www-cs.stanford.edu/people/davidknowles/lagrangian_duality.pdf)
+### Gradient Descent
+- UBC: [https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf](https://www.cs.ubc.ca/~schmidtm/Courses/540-W18/L4.pdf)
+- Berkeley: [https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c03_p47-84.pdf](https://people.eecs.berkeley.edu/~jordan/kernels/0521813972c03_p47-84.pdf)
+
+
+## Deep Learning
+- Bandit algorithm: [https://tor-lattimore.com/downloads/book/book.pdf](https://tor-lattimore.com/downloads/book/book.pdf)
+- Visual Question Answering: [https://visualqa.org/](https://visualqa.org/)
+- Berkeley STAT Course: [https://courses.d2l.ai/berkeley-stat-157/index.html](https://courses.d2l.ai/berkeley-stat-157/index.html)
+- Berkeley CS Course: [https://bcourses.berkeley.edu/courses/1487769](https://bcourses.berkeley.edu/courses/1487769); [https://www2.eecs.berkeley.edu/Courses/CS282A/](https://www2.eecs.berkeley.edu/Courses/CS282A/)
+- Berkeley CS Course: [https://sites.google.com/view/berkeley-cs294-158-sp20/home](https://sites.google.com/view/berkeley-cs294-158-sp20/home)
+- UPenn ESE Course: [https://pratikac.github.io/pub/19_ese546.pdf?fbclid=IwAR1Z-QyDU8VZqY9c0yUha1LoaaPuwqVXfzqTbPd7RpfP-MR-e774Nke3M1k](https://pratikac.github.io/pub/19_ese546.pdf?fbclid=IwAR1Z-QyDU8VZqY9c0yUha1LoaaPuwqVXfzqTbPd7RpfP-MR-e774Nke3M1k)
+- Harvard Advanced Data Science Course: [https://harvard-iacs.github.io/2020F-AC295/pages/materials.html](https://harvard-iacs.github.io/2020F-AC295/pages/materials.html)
+
+## Reinforcement Learning
+- Sutton Book: [http://incompleteideas.net/book/RLbook2020.pdf](http://incompleteideas.net/book/RLbook2020.pdf)
+- CMU: [https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture26-ri.pdf](https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture26-ri.pdf)
+- Blog, Nice Overview: [https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html](https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html)
 
 ## Cross Validation
 - Error and validation: [http://www.stat.cmu.edu/~ryantibs/advmethods/notes/errval.pdf](http://www.stat.cmu.edu/~ryantibs/advmethods/notes/errval.pdf)
 - K-Fold cross validation: [http://statweb.stanford.edu/~tibs/sta306bfiles/cvwrong.pdf](http://statweb.stanford.edu/~tibs/sta306bfiles/cvwrong.pdf)
 - DataCamp practice: [https://campus.datacamp.com/courses/model-validation-in-python/cross-validation?ex=6](https://campus.datacamp.com/courses/model-validation-in-python/cross-validation?ex=6)
+
+## Evaluation
+- Precision and recall: [https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall)
+- Precision and recall: [https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html](https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
+- Precision, recall, sensitivity and specificity: [https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall](https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall)
+- Precision, recall, sensitivity and specificity: [http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf](http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf)
+- Harvard: [https://scholar.harvard.edu/files/msseo/files/5.convergence_informatics_week5.pdf](https://scholar.harvard.edu/files/msseo/files/5.convergence_informatics_week5.pdf)
 
 ## NLP
 - N-gram: [https://web.stanford.edu/~jurafsky/slp3/3.pdf](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
@@ -84,37 +102,22 @@ permalink: /resources/
 - Seq to Seq and Attention for NLP: [https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html)
 - Encoder Decoder with Attention: [https://bastings.github.io/annotated_encoder_decoder/](https://bastings.github.io/annotated_encoder_decoder/)
 - Latent Dirtchlet Allocation/Topic Modeling: [https://www.cl.cam.ac.uk/teaching/1213/L101/clark_lectures/lect7.pdf](https://www.cl.cam.ac.uk/teaching/1213/L101/clark_lectures/lect7.pdf)
+- Decoding methods: [https://towardsdatascience.com/decoding-strategies-that-you-need-to-know-for-response-generation-ba95ee0faadc](https://towardsdatascience.com/decoding-strategies-that-you-need-to-know-for-response-generation-ba95ee0faadc)
 
-## Deep Learning
-- Bandit algorithm: [https://tor-lattimore.com/downloads/book/book.pdf](https://tor-lattimore.com/downloads/book/book.pdf)
-- Visual Question Answering: [https://visualqa.org/](https://visualqa.org/)
-- Berkeley STAT Course: [https://courses.d2l.ai/berkeley-stat-157/index.html](https://courses.d2l.ai/berkeley-stat-157/index.html)
-- Berkeley CS Course: [https://bcourses.berkeley.edu/courses/1487769](https://bcourses.berkeley.edu/courses/1487769); [https://www2.eecs.berkeley.edu/Courses/CS282A/](https://www2.eecs.berkeley.edu/Courses/CS282A/)
-- Berkeley CS Course: [https://sites.google.com/view/berkeley-cs294-158-sp20/home](https://sites.google.com/view/berkeley-cs294-158-sp20/home)
-- UPenn ESE Course: [https://pratikac.github.io/pub/19_ese546.pdf?fbclid=IwAR1Z-QyDU8VZqY9c0yUha1LoaaPuwqVXfzqTbPd7RpfP-MR-e774Nke3M1k](https://pratikac.github.io/pub/19_ese546.pdf?fbclid=IwAR1Z-QyDU8VZqY9c0yUha1LoaaPuwqVXfzqTbPd7RpfP-MR-e774Nke3M1k)
-- UPenn CIS Course: [https://www.seas.upenn.edu/~cis522/schedule.html](https://www.seas.upenn.edu/~cis522/schedule.html)
-- Harvard Advanced Data Science Course: [https://harvard-iacs.github.io/2020F-AC295/pages/materials.html](https://harvard-iacs.github.io/2020F-AC295/pages/materials.html)
+### Transformers
+- Implementation of paper "Attention is All You Need: [http://nlp.seas.harvard.edu/2018/04/03/attention.html](http://nlp.seas.harvard.edu/2018/04/03/attention.html#positional-encoding)
 
-## Reinforcement Learning
-- Sutton Book: [http://incompleteideas.net/book/RLbook2020.pdf](http://incompleteideas.net/book/RLbook2020.pdf)
-- CMU: [https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture26-ri.pdf](https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture26-ri.pdf)
-- Blog, Nice Overview: [https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html](https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html)
+## Information Theory
+- [https://web.stanford.edu/class/ee376a/files/lecture_notes.pdf](https://web.stanford.edu/class/ee376a/files/lecture_notes.pdf)
+- Uncorrelated vs independent: [https://www.stat.cmu.edu/~cshalizi/uADA/13/reminders/uncorrelated-vs-independent.pdf](https://www.stat.cmu.edu/~cshalizi/uADA/13/reminders/uncorrelated-vs-independent.pdf)
+- Huffman coding: [http://www.cs.cmu.edu/~aarti/Class/10704/lec8-srccodingHuffman.pdf](http://www.cs.cmu.edu/~aarti/Class/10704/lec8-srccodingHuffman.pdf)
 
-## Evaluation
-- Precision and recall: [https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall)
-- Precision and recall: [https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html](https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
-- Precision, recall, sensitivity and specificity: [https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall](https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall)
-- Precision, recall, sensitivity and specificity: [http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf](http://cs229.stanford.edu/section/evaluation_metrics_spring2020.pdf)
-- Harvard: [https://scholar.harvard.edu/files/msseo/files/5.convergence_informatics_week5.pdf](https://scholar.harvard.edu/files/msseo/files/5.convergence_informatics_week5.pdf)
-
-## Model Explanations:
+## Model Explanations and Interpretable ML
 - LIME: [https://homes.cs.washington.edu/~marcotcr/blog/lime/](https://homes.cs.washington.edu/~marcotcr/blog/lime/)
 - LIME Paper: [https://arxiv.org/pdf/1602.04938v1.pdf](https://arxiv.org/pdf/1602.04938v1.pdf)
 - LIME GitHub: [https://github.com/marcotcr/lime](https://github.com/marcotcr/lime)
 - LIME Tutorial: [https://marcotcr.github.io/lime/tutorials/Lime%20-%20basic%20usage%2C%20two%20class%20case.html](https://marcotcr.github.io/lime/tutorials/Lime%20-%20basic%20usage%2C%20two%20class%20case.html)
-
-## Interpretable ML
-- [https://christophm.github.io/interpretable-ml-book/limo.html](https://christophm.github.io/interpretable-ml-book/limo.html)
+- Interpretable ML: [https://christophm.github.io/interpretable-ml-book/limo.html](https://christophm.github.io/interpretable-ml-book/limo.html)
 
 ## Tools
 - GitPages: [https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages)
@@ -127,8 +130,6 @@ permalink: /resources/
 - Pytorch Access Weights: [https://discuss.pytorch.org/t/access-weights-of-a-specific-module-in-nn-sequential/3627](https://discuss.pytorch.org/t/access-weights-of-a-specific-module-in-nn-sequential/3627)
 - Pytorch Latent Space: [https://discuss.pytorch.org/t/plotting-the-latent-space/88431](https://discuss.pytorch.org/t/plotting-the-latent-space/88431)
 
-## Transformers
-- Implementation of paper "Attention is All You Need: [http://nlp.seas.harvard.edu/2018/04/03/attention.html](http://nlp.seas.harvard.edu/2018/04/03/attention.html#positional-encoding)
 ## Datasets
 - Lionbridge: [https://lionbridge.ai/datasets/](https://lionbridge.ai/datasets/)
 

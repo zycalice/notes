@@ -3,7 +3,7 @@ title: main
 ---
 
 # Yuchen (Alice) Zhang's Website
- <a href="https://zycalice.github.io/experience">Experience</a> | <a href= "https://zycalice.github.io/resources">Resources</a>
+ <a href="https://zycalice.github.io/experience">Experience</a> | <a href= "https://zycalice.github.io/course-resources">Course Resources</a>
 
 
 <p align="center">
