@@ -16,7 +16,6 @@ I care deeply about data science for social good and believe that our research i
 
 - [Securities Class Action Project using ML and NLP](https://zycalice.github.io/securities-class-action/)
 - [Fake News Detection](https://github.com/zycalice/fake-news-detection/blob/main/writeups/CIS520_Proposal.pdf)
-- [Analysis on CFPB Complaints](https://zycalice.github.io/cfpb-complaints/)
 
-Visit my github repositories for more!
+Visit my GitHub repositories for more!
 
