@@ -1,9 +1,9 @@
 ---
-title: resources
-permalink: /resources/
+title: knowledge-resources
+permalink: /knowledge-resources/
 ---
 
-# Resources (Mostly course resources)
+# Knowledge Resources
 [<< Back to my website](https://zycalice.github.io/)
 
 ## Linear Algebra
@@ -15,7 +15,7 @@ permalink: /resources/
 - Regression to mean and how to remove it: [https://www.iwh.on.ca/what-researchers-mean-by/regression-to-mean](https://www.iwh.on.ca/what-researchers-mean-by/regression-to-mean)
 
 ## Information Theory
-- [https://web.stanford.edu/class/ee376a/files/lecture_notes.pdf](https://web.stanford.edu/class/ee376a/files/lecture_notes.pdf)
+- General Lecture notes: [https://web.stanford.edu/class/ee376a/files/lecture_notes.pdf](https://web.stanford.edu/class/ee376a/files/lecture_notes.pdf)
 - Uncorrelated vs independent: [https://www.stat.cmu.edu/~cshalizi/uADA/13/reminders/uncorrelated-vs-independent.pdf](https://www.stat.cmu.edu/~cshalizi/uADA/13/reminders/uncorrelated-vs-independent.pdf)
 - Huffman coding: [http://www.cs.cmu.edu/~aarti/Class/10704/lec8-srccodingHuffman.pdf](http://www.cs.cmu.edu/~aarti/Class/10704/lec8-srccodingHuffman.pdf)
 

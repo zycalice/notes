@@ -3,7 +3,7 @@ title: course-resources
 permalink: /course-resources/
 ---
 
-# Courses
+# Courses Resources
 [<< Back to my website](https://zycalice.github.io/)
 
 ## Efficient Algorithm
